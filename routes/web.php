@@ -16,8 +16,26 @@ Route::prefix('admin')->group(function () {
 Route::get('/{page?}', function ($page = 'index') {
     $page = str_replace(['.php', '.html'], '', $page);
     
+    // Map view names to section names
+    $sectionMap = [
+        'index' => 'Home',
+        'about' => 'About Us',
+        'services' => 'Our Services',
+        'products' => 'Products',
+        'contact' => 'Contact'
+    ];
+    
     if (view()->exists($page)) {
-        return view($page);
+        $sectionName = $sectionMap[$page] ?? null;
+        $content = [];
+        if ($sectionName) {
+            $content = \App\Models\FrontendContent::where('section', $sectionName)->get()->keyBy('key');
+        }
+        
+        // Always fetch Footer content
+        $footerContent = \App\Models\FrontendContent::where('section', 'Footer Section')->get()->keyBy('key');
+        
+        return view($page, compact('content', 'footerContent'));
     }
     
     abort(404);

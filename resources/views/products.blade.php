@@ -150,13 +150,9 @@
 								</div>
 							</div>
 							<div class="permalink">
-							  <h4><a href="endpointsecurity" title="End Point Security">End Point Security</a></h4>
+							  <h4><a href="endpointsecurity" title="End Point Security">{{ $content['product_1_title']->value ?? 'End Point Security' }}</a></h4>
 							
-							  <p align="justify">									 Cyber Security Africa through our partners provides intrusion prevention systems that identify possible intrusions to your network and stops them, preventing further risk. Features include:
-
-
-    blocks dangerous communications can protect against dangerous peer-to-peer and instant messaging communications; - easy-to-use browser-based interface. - 
-inspect incoming emails for a variety of threats, including email viruses,spam, spyware, and phishing attacks.</p>
+							  <p align="justify">									 {{ $content['product_1_desc']->value ?? 'Cyber Security Africa through our partners provides intrusion prevention systems that identify possible intrusions to your network and stops them, preventing further risk. Features include: blocks dangerous communications can protect against dangerous peer-to-peer and instant messaging communications; - easy-to-use browser-based interface. - inspect incoming emails for a variety of threats, including email viruses,spam, spyware, and phishing attacks.' }}</p>
 							  <p>
 								  <a href="endpointsecurity" class="button color-alt small round">Read More</a>
 								</p>
@@ -173,16 +169,10 @@ inspect incoming emails for a variety of threats, including email viruses,spam, 
 								</div>
 							</div>
 							<div class="permalink">
-							  <h4><a href="intrusion-prevention">Intrusion Prevention Systems</a></h4>
+							  <h4><a href="intrusion-prevention">{{ $content['product_2_title']->value ?? 'Intrusion Prevention Systems' }}</a></h4>
 							
 								<p align="justify">
-									 Cyber Security Africa through our partners provides intrusion prevention systems that identify possible intrusions to your network and stops them, preventing further risk. Features of the IPS include:
-
-    blocks dangerous communications can protect against dangerous peer-to-peer and instant messaging communications
-    easy-to-use browser-based interface.
-    inspect incoming emails for a variety of threats, including email viruses,spam, spyware, and phishing attacks.
-    
-    
+									 {{ $content['product_2_desc']->value ?? 'Cyber Security Africa through our partners provides intrusion prevention systems that identify possible intrusions to your network and stops them, preventing further risk. Features of the IPS include: blocks dangerous communications can protect against dangerous peer-to-peer and instant messaging communications easy-to-use browser-based interface. inspect incoming emails for a variety of threats, including email viruses,spam, spyware, and phishing attacks.' }}
 		</p>
 								 <p>
 								  <a href="intrusion-prevention" class="button color-alt small round">Read More</a>
@@ -202,9 +192,9 @@ inspect incoming emails for a variety of threats, including email viruses,spam, 
 								</div>
 							</div>
 							<div class="permalink">
-								<h4><a href="vulnerabilitymanagement" title="Vulnerability Management">Vulnerability Management</a></h4>
+								<h4><a href="vulnerabilitymanagement" title="Vulnerability Management">{{ $content['product_3_title']->value ?? 'Vulnerability Management' }}</a></h4>
 															<p align="justify">
-									Network security breaches are most commonly caused by missing network patches.Patch management is vital to your business. Cyber Security Africa through our partners provide appliances that scans and detects network vulnerabilities before they are exposed, reducing the time required to patch machines on your network.
+									{{ $content['product_3_desc']->value ?? 'Network security breaches are most commonly caused by missing network patches.Patch management is vital to your business. Cyber Security Africa through our partners provide appliances that scans and detects network vulnerabilities before they are exposed, reducing the time required to patch machines on your network.' }}
 								</p>
 								 <p>
 								  <a href="vulnerabilitymanagement" class="button color-alt small round">Read More</a>
@@ -412,9 +402,8 @@ inspect incoming emails for a variety of threats, including email viruses,spam, 
 		<h4>About Cyber Security Africa</h4>
 		
 		<p>
-			Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets.
+			{{ $footerContent['about_us_text']->value ?? 'Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets. We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives.' }}
 		</p>
-        <p> We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives. </p>
 		</section>
 		<section class="one-third">
 		<h4>Our Services</h4>
@@ -430,12 +419,12 @@ inspect incoming emails for a variety of threats, including email viruses,spam, 
 		<section class="one-third">
 		<h4>Contact Details</h4>
 		
-        <p>Africa Headquarter: Nairobi, Kenya.</p>
-        <p>Tel: + 254 518 007 755</p>
-            <p>Safaricom: + 254 722 102 854</p>
-            <p>Airtel: + 254 786 629 775</p>
-             <p>Fax: + 254 202 149 857</p>
-        <p> Email: <a href="cdn-cgi/l/email-protection#dfb6b1b9b09fbca6bdbaadacbabcaaadb6aba6beb9adb6bcbef1bcb0b2"><span class="__cf_email__" data-cfemail="0a63646c654a6973686f78796f697f78637e736b6c7863696b24696567">[email&#160;protected]</span></a></p>
+        <p>{{ $footerContent['contact_address']->value ?? 'Africa Headquarter: Nairobi, Kenya.' }}</p>
+        <p>Tel: {{ $footerContent['contact_tel']->value ?? '+ 254 518 007 755' }}</p>
+            <p>Safaricom: {{ $footerContent['contact_safaricom']->value ?? '+ 254 722 102 854' }}</p>
+            <p>Airtel: {{ $footerContent['contact_airtel']->value ?? '+ 254 786 629 775' }}</p>
+             <p>Fax: {{ $footerContent['contact_fax']->value ?? '+ 254 202 149 857' }}</p>
+        <p> Email: <a href="mailto:{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}">{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}</a></p>
 		</section>
 		</section>
 		</footer>
@@ -443,7 +432,7 @@ inspect incoming emails for a variety of threats, including email viruses,spam, 
 		<section class="container">
 		<div class="one-half">
 			<p>
-				 Copyright © 2017 Cyber Security Africa. All Rights Reserved.
+				 {{ $footerContent['copyright_text']->value ?? 'Copyright © 2017 Cyber Security Africa. All Rights Reserved.' }}
 		  </p>
 		</div>
 		<div class="one-half">

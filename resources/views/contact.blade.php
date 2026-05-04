@@ -148,13 +148,9 @@
 					<h4 class="widget-title">Contact Information</h4>
 					<ul class="simple-list">
 										
-						<li>Africa Headquarters: Nairobi, Kenya</li>
-						<li>Tel: + 254 518 007 755</li>
-                        <li>Safaricom: + 254 722 102 854</li>
-                        <li>Airtel: + 254 786 629 775</li>
-                        <li>Airtel: + 254 735 002 040</li>
-                        <li>Fax: + 254 202 149 857</li>
-                        <li>Email: <a href="cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4920272f26092a302b2c3b3a2c2a3c3b203d30282f3b202a28672a2624">[email&#160;protected]</a></li>
+						<li>{{ $content['address']->value ?? 'Africa Headquarters: Nairobi, Kenya' }}</li>
+						<li>{!! nl2br(e($content['phone_numbers']->value ?? "Tel: + 254 518 007 755\nSafaricom: + 254 722 102 854\nAirtel: + 254 786 629 775\nAirtel: + 254 735 002 040\nFax: + 254 202 149 857")) !!}</li>
+                        <li>Email: <a href="mailto:{{ $content['email']->value ?? 'info@cybersecurityafrica.com' }}">{{ $content['email']->value ?? 'info@cybersecurityafrica.com' }}</a></li>
 				  </ul>
 					
 				</div>
@@ -177,9 +173,8 @@
 		<h4>About Cyber Security Africa</h4>
 		
 		<p>
-			Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets.
+			{{ $footerContent['about_us_text']->value ?? 'Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets. We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives.' }}
 		</p>
-        <p> We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives. </p>
 		</section>
 		<section class="one-third">
 		<h4>Our Services</h4>
@@ -195,12 +190,12 @@
 		<section class="one-third">
 		<h4>Contact Details</h4>
 		
-        <p>Africa Headquarter: Nairobi, Kenya.</p>
-        <p>Tel: + 254 518 007 755</p>
-            <p>Safaricom: + 254 722 102 854</p>
-            <p>Airtel: + 254 786 629 775</p>
-             <p>Fax: + 254 202 149 857</p>
-        <p> Email: <a href="cdn-cgi/l/email-protection#056c6b636a45667c67607776606670776c717c6463776c66642b666a68"><span class="__cf_email__" data-cfemail="147d7a727b54776d76716667717761667d606d7572667d77753a777b79">[email&#160;protected]</span></a></p>
+        <p>{{ $footerContent['contact_address']->value ?? 'Africa Headquarter: Nairobi, Kenya.' }}</p>
+        <p>Tel: {{ $footerContent['contact_tel']->value ?? '+ 254 518 007 755' }}</p>
+            <p>Safaricom: {{ $footerContent['contact_safaricom']->value ?? '+ 254 722 102 854' }}</p>
+            <p>Airtel: {{ $footerContent['contact_airtel']->value ?? '+ 254 786 629 775' }}</p>
+             <p>Fax: {{ $footerContent['contact_fax']->value ?? '+ 254 202 149 857' }}</p>
+        <p> Email: <a href="mailto:{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}">{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}</a></p>
 		</section>
 		</section>
 		</footer>
@@ -208,7 +203,7 @@
 		<section class="container">
 		<div class="one-half">
 			<p>
-				 Copyright © 2017 Cyber Security Africa. All Rights Reserved.
+				 {{ $footerContent['copyright_text']->value ?? 'Copyright © 2017 Cyber Security Africa. All Rights Reserved.' }}
 		  </p>
 		</div>
 		<div class="one-half">

@@ -151,19 +151,15 @@
 								<h4>Company Brief</h4>
 
 
-								<p align="justify">Our dedicated consultancy team has extensive experience, and is fully up to date with the latest technology and scientific developments. </p>
+								<p align="justify">{!! nl2br(e($content['company_brief']->value ?? 'Our dedicated consultancy team has extensive experience, and is fully up to date with the latest technology and scientific developments.')) !!}</p>
  
 
 					 <ul class="simple-list">
-						<li><i class="icon-check-sign"></i>Our Mission: To build a community of information security for Africa. </li>
+						<li><i class="icon-check-sign"></i>{{ $content['our_mission']->value ?? 'Our Mission: To build a community of information security for Africa.' }}</li>
 						 
-							<li><i class="icon-check-sign"></i>Our Vision:
-
-To set new standard in Information Communication Technology and Security.
+							<li><i class="icon-check-sign"></i>{{ $content['our_vision']->value ?? 'Our Vision: To set new standard in Information Communication Technology and Security.' }}
 </li>
-							<li><i class="icon-check-sign"></i>Our Values:
-
-Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and Effectiveness.
+							<li><i class="icon-check-sign"></i>{{ $content['our_values']->value ?? 'Our Values: Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and Effectiveness.' }}
 </li>
 		<p><h4>Our Skills level</h4></p>
 						
@@ -201,20 +197,20 @@ Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and
 
 
 					<p align="justify">
-						Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets. 
+						{{ $content['about_company_desc_1']->value ?? 'Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets.' }} 
 					</p>
 					<p align="justify">
-						We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives. The nature and scope of the Information Security field has evolved over the past several years, no longer are we just concerned with protecting the technical edifice. Our emphasis has become more holistic and we tend to consider all aspects of information protection as central to the field of security.
+						{{ $content['about_company_desc_2']->value ?? 'We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives. The nature and scope of the Information Security field has evolved over the past several years, no longer are we just concerned with protecting the technical edifice. Our emphasis has become more holistic and we tend to consider all aspects of information protection as central to the field of security.' }}
 					</p>
 					<p align="justify">
-						We have a team and partners in information Security industry who are veterans. Cyber Security Africa is well on the way to establishing an enduring reputation as the company to partner with for value-optimized, cost efficient services and thought leadership opportunities. 
+						{{ $content['about_company_desc_3']->value ?? 'We have a team and partners in information Security industry who are veterans. Cyber Security Africa is well on the way to establishing an enduring reputation as the company to partner with for value-optimized, cost efficient services and thought leadership opportunities.' }} 
 					</p>
  
 			<p align="justify">
-						<strong>Our Philosophy:</strong> We aim to create enduring partnerships, which enhance your capacity , capability and enables effective, efficient and smooth operations in your Organization. While reliability and results remain core principles, we pride ourselves on our integrity, transparency and cultural sensitivity, which we regard as critical to maintaining our own reputation and safeguarding yours.
+						<strong>Our Philosophy:</strong> {{ $content['our_philosophy']->value ?? 'We aim to create enduring partnerships, which enhance your capacity , capability and enables effective, efficient and smooth operations in your Organization. While reliability and results remain core principles, we pride ourselves on our integrity, transparency and cultural sensitivity, which we regard as critical to maintaining our own reputation and safeguarding yours.' }}
 				  </p>
                     <p align="justify">
-						<strong>Our Unique, Proven Approach:</strong> Our success stems from our hands-on, flexibility, transfer of skills and knowledge and teamwork approach. This means we give our clients the opportunity to learn in real-life situations - an approach that offers far-reaching benefits.
+						<strong>Our Unique, Proven Approach:</strong> {{ $content['our_approach']->value ?? 'Our success stems from our hands-on, flexibility, transfer of skills and knowledge and teamwork approach. This means we give our clients the opportunity to learn in real-life situations - an approach that offers far-reaching benefits.' }}
 					</p>			 
 </div>
 
@@ -301,9 +297,8 @@ Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and
 		<h4>About Cyber Security Africa</h4>
 		
 		<p>
-			Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets.
+			{{ $footerContent['about_us_text']->value ?? 'Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets. We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives.' }}
 		</p>
-        <p> We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives. </p>
 		</section>
 		<section class="one-third">
 		<h4>Our Services</h4>
@@ -319,12 +314,12 @@ Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and
 		<section class="one-third">
 		<h4>Contact Details</h4>
 		
-        <p>Africa Headquarter: Nairobi, Kenya.</p>
-        <p>Tel: + 254 518 007 755</p>
-            <p>Safaricom: + 254 722 102 854</p>
-            <p>Airtel: + 254 786 629 775</p>
-             <p>Fax: + 254 202 149 857</p>
-        <p> Email: <a href="cdn-cgi/l/email-protection#e48d8a828ba4879d86819697818791968d909d8582968d8785ca878b89"><span class="__cf_email__" data-cfemail="a7cec9c1c8e7c4dec5c2d5d4c2c4d2d5ced3dec6c1d5cec4c689c4c8ca">[email&#160;protected]</span></a></p>
+        <p>{{ $footerContent['contact_address']->value ?? 'Africa Headquarter: Nairobi, Kenya.' }}</p>
+        <p>Tel: {{ $footerContent['contact_tel']->value ?? '+ 254 518 007 755' }}</p>
+            <p>Safaricom: {{ $footerContent['contact_safaricom']->value ?? '+ 254 722 102 854' }}</p>
+            <p>Airtel: {{ $footerContent['contact_airtel']->value ?? '+ 254 786 629 775' }}</p>
+             <p>Fax: {{ $footerContent['contact_fax']->value ?? '+ 254 202 149 857' }}</p>
+        <p> Email: <a href="mailto:{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}">{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}</a></p>
 		</section>
 		</section>
 		</footer>
@@ -332,7 +327,7 @@ Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and
 		<section class="container">
 		<div class="one-half">
 			<p>
-				 Copyright © 2017 Cyber Security Africa. All Rights Reserved.
+				 {{ $footerContent['copyright_text']->value ?? 'Copyright © 2017 Cyber Security Africa. All Rights Reserved.' }}
 		  </p>
 		</div>
 		<div class="one-half">

@@ -145,9 +145,9 @@
 					<h1>
 					<i class="icon-cloud"></i>
 					</h1>
-					<h4>Penetration Testing</h4>
+					<h4>{{ $content['service_1_title']->value ?? 'Penetration Testing' }}</h4>
 					<p>
-						 A penetration test is a simulation of a hacker attack on a network, system, application or website used to discover existing weaknesses before hackers find and exploit them.We determine feasibility of an attack and the amount of business impact of a successful network compromise.
+						 {{ $content['service_1_desc']->value ?? 'A penetration test is a simulation of a hacker attack on a network, system, application or website used to discover existing weaknesses before hackers find and exploit them.We determine feasibility of an attack and the amount of business impact of a successful network compromise.' }}
 					</p>
 					<p>
 						<br/><a href="penetration-testing" class="button big round color">Read More</a>
@@ -161,9 +161,9 @@
 					<h1>
 					<i class="icon-cogs"></i>
 					</h1>
-					<h4>Internet & Mobile Banking Security Testing </h4>
+					<h4>{{ $content['service_2_title']->value ?? 'Internet & Mobile Banking Security Testing' }}</h4>
 					<p>
-						Our web application security experts employ a combination of automated tests using the latest tools and technology along with manual testing and examination. We examine web applications used externally and internally and underlying databases for any misconfigurations, vulnerabilities and...
+						{{ $content['service_2_desc']->value ?? 'Our web application security experts employ a combination of automated tests using the latest tools and technology along with manual testing and examination. We examine web applications used externally and internally and underlying databases for any misconfigurations, vulnerabilities and...' }}
 					</p>
 					<p>
 						<br/><a href="web-app-penetration-testing" class="button big round color">Read More</a>
@@ -177,9 +177,9 @@
 					<h1>
 					<i class="icon-laptop"></i>
 					</h1>
-				  <h4>Computer Forensics</h4>
+				  <h4>{{ $content['service_3_title']->value ?? 'Computer Forensics' }}</h4>
 					<p>
-						 Our track record combined with the latest forensic tools and technical expertise make Cyber Security Africa a leader in data forensics, security and investigations.Our portable lab forensic systems are designed for portability and power when you need work done at another location. Our investment in high speed processing...</p>
+						 {{ $content['service_3_desc']->value ?? 'Our track record combined with the latest forensic tools and technical expertise make Cyber Security Africa a leader in data forensics, security and investigations.Our portable lab forensic systems are designed for portability and power when you need work done at another location. Our investment in high speed processing...' }}</p>
 					<p>
 						<br/><a href="computer-forensics-services" class="button big round color">Read More</a>
 				  </p>
@@ -367,9 +367,8 @@
 		<h4>About Cyber Security Africa</h4>
 		
 		<p>
-			Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets.
+			{{ $footerContent['about_us_text']->value ?? 'Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets. We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives.' }}
 		</p>
-        <p> We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives. </p>
 		</section>
 		<section class="one-third">
 		<h4>Our Services</h4>
@@ -385,12 +384,12 @@
 		<section class="one-third">
 		<h4>Contact Details</h4>
 		
-        <p>Africa Headquarter: Nairobi, Kenya.</p>
-        <p>Tel: + 254 518 007 755</p>
-            <p>Safaricom: + 254 722 102 854</p>
-            <p>Airtel: + 254 786 629 775</p>
-             <p>Fax: + 254 202 149 857</p>
-        <p> Email: <a href="cdn-cgi/l/email-protection#3851565e57785b415a5d4a4b5d5b4d4a514c41595e4a515b59165b5755"><span class="__cf_email__" data-cfemail="90f9fef6ffd0f3e9f2f5e2e3f5f3e5e2f9e4e9f1f6e2f9f3f1bef3fffd">[email&#160;protected]</span></a></p>
+        <p>{{ $footerContent['contact_address']->value ?? 'Africa Headquarter: Nairobi, Kenya.' }}</p>
+        <p>Tel: {{ $footerContent['contact_tel']->value ?? '+ 254 518 007 755' }}</p>
+            <p>Safaricom: {{ $footerContent['contact_safaricom']->value ?? '+ 254 722 102 854' }}</p>
+            <p>Airtel: {{ $footerContent['contact_airtel']->value ?? '+ 254 786 629 775' }}</p>
+             <p>Fax: {{ $footerContent['contact_fax']->value ?? '+ 254 202 149 857' }}</p>
+        <p> Email: <a href="mailto:{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}">{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}</a></p>
 		</section>
 		</section>
 		</footer>
@@ -398,7 +397,7 @@
 		<section class="container">
 		<div class="one-half">
 			<p>
-				 Copyright © 2017 Cyber Security Africa. All Rights Reserved.
+				 {{ $footerContent['copyright_text']->value ?? 'Copyright © 2017 Cyber Security Africa. All Rights Reserved.' }}
 		  </p>
 		</div>
 		<div class="one-half">

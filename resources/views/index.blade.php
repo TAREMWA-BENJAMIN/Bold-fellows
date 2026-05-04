@@ -145,11 +145,11 @@ h1,h2,h3,h4,h5,h6 {
 		<div class="ls-layer" style="slidedirection: top; slidedelay: 6000; durationin: 1500; durationout: 1500; delayout: 500;">
 				<img src="images/slider/layer/1/slide1-bg.jpg" class="ls-bg" alt="">
 		   <img src="images/slider/layer/1/6thEthiopia.png" class="ls-s6" alt="" style="top: 10px; left: -15px; slidedirection : bottom; slideoutdirection : bottom; durationin : 1500; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 600;">
-			  <h1 class="ls-s3 ls_large_text_01" style="position: absolute; top:100px; left: 490px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;">The 6th Ethiopia, Banking & <br>ICT Summit 2019
+			  <h1 class="ls-s3 ls_large_text_01" style="position: absolute; top:100px; left: 490px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;">{!! $content['slider_1_title']->value ?? 'The 6th Ethiopia, Banking & <br>ICT Summit 2019' !!}
 		   </h1>
-				<h5 class="ls-s3 l1-s1 ls_large_text_07" style="position: absolute; top:290px; left: 490px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;">  Date: 29th November, 2019 | Venue: Skylight Hotel, Addis Ababa, Ethiopia.</h5>
+				<h5 class="ls-s3 l1-s1 ls_large_text_07" style="position: absolute; top:290px; left: 490px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;">{!! $content['slider_1_subtitle']->value ?? '  Date: 29th November, 2019 | Venue: Skylight Hotel, Addis Ababa, Ethiopia.' !!}</h5>
                 
-             <p align="left" class="ls-s3 l1-s1 ls_large_text_07" style="position: absolute; top:200px; left: 490px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;"> The 6th Ethiopia Banking and ICT Summit 2019 is a must-attend event dedicated to enhancing digital operational excellence and overcoming the challenges surrounding Banking and ICT transformation and the impact of technological development. 
+             <p align="left" class="ls-s3 l1-s1 ls_large_text_07" style="position: absolute; top:200px; left: 490px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;"> {!! nl2br(e($content['slider_1_desc']->value ?? 'The 6th Ethiopia Banking and ICT Summit 2019 is a must-attend event dedicated to enhancing digital operational excellence and overcoming the challenges surrounding Banking and ICT transformation and the impact of technological development.')) !!}
 </p>
                 
             <br>
@@ -161,12 +161,12 @@ h1,h2,h3,h4,h5,h6 {
              <div class="ls-layer" style="slidedirection: top; slidedelay: 6000; durationin: 1500; durationout: 1500; delayout: 500;">
 				<img src="images/slider/layer/1/slide2-bg.jpg" class="ls-bg" alt="">
 				<img src="images/slider/layer/1/slide0-5.png" class="ls-s6" alt="" style="top: 10px; left: -15px; slidedirection : bottom; slideoutdirection : bottom; durationin : 1500; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 600;">
-			  <h1 class="ls-s3 ls_large_text_01" style="position: absolute; top:100px; left: 490px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000; font-family: 'Century Gothic', Arial, Verdana;">Advanced Cyber Security<br>Threat Protection 
+			  <h1 class="ls-s3 ls_large_text_01" style="position: absolute; top:100px; left: 490px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000; font-family: 'Century Gothic', Arial, Verdana;">{!! $content['slider_2_title']->value ?? 'Advanced Cyber Security<br>Threat Protection' !!} 
 			  </h1>
 				
                 
-              <p align="left" class="ls-s3 l1-s1 ls_large_text_07" style="color: #FFF; position: absolute; top:200px; left: 490px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;"> Cyber Security Africa provides unrivaled technical services, trusted advice <br>to its client-base,  
-            a role that allows us to fully understand and help our clients<br> to achieve their organization and security objectives.  <br><strong>Cyber Security Consultancy & Training Services </strong></p>
+              <p align="left" class="ls-s3 l1-s1 ls_large_text_07" style="color: #FFF; position: absolute; top:200px; left: 490px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;">{!! $content['slider_2_desc']->value ?? 'Cyber Security Africa provides unrivaled technical services, trusted advice <br>to its client-base,  
+            a role that allows us to fully understand and help our clients<br> to achieve their organization and security objectives.  <br><strong>Cyber Security Consultancy & Training Services </strong>' !!}</p>
                 
             <br>
             <br>         
@@ -201,7 +201,7 @@ h1,h2,h3,h4,h5,h6 {
 			<div class="home-intro"><!-- home intro starts-->
 			  <div class="container">
 					<div class="three-fourth">
-						<h4>Cyber Security Consultancy and Training</h4>
+						<h4>{{ $content['intro_title']->value ?? 'Cyber Security Consultancy and Training' }}</h4>
 						
 					</div>
 					<div class="one-fourth">
@@ -217,11 +217,11 @@ h1,h2,h3,h4,h5,h6 {
 							<div class="feature-block-icon">
 								<i class="icon-lightbulb"></i><span></span>
 							</div>
-							<h4>Security Consultancy</h4>
+							<h4>{{ $content['feature_1_title']->value ?? 'Security Consultancy' }}</h4>
 							<h6>We advice, consult &amp; install</h6>
 				    </div>
 					  <p align="justify">
-						   We offer a comprehensive approach to assessing the security of network systems, firewall systems, users systems and web applications against security threats.
+						   {{ $content['feature_1_desc']->value ?? 'We offer a comprehensive approach to assessing the security of network systems, firewall systems, users systems and web applications against security threats.' }}
 					  </p>
 				  </div>
 				</div>
@@ -231,10 +231,10 @@ h1,h2,h3,h4,h5,h6 {
 							<div class="feature-block-icon">
 								<i class="icon-desktop"></i><span></span>
 							</div>
-							<h4>Security Training</h4>
+							<h4>{{ $content['feature_2_title']->value ?? 'Security Training' }}</h4>
 							<h6>IT Security, Revenue Assurance</h6>
 				    </div>
-					  <p align="justify">We offer practical training hands-on approach. We give our clients the   opportunity to learn in real-life situations - an approach that offers   far-reaching benefits</p>
+					  <p align="justify">{{ $content['feature_2_desc']->value ?? 'We offer practical training hands-on approach. We give our clients the   opportunity to learn in real-life situations - an approach that offers   far-reaching benefits' }}</p>
 				  </div>
 				</div>
 				<div class="one-third">
@@ -243,10 +243,10 @@ h1,h2,h3,h4,h5,h6 {
 							<div class="feature-block-icon">
 								<i class="icon-briefcase"></i><span></span>
 							</div>
-							<h4>Upcoming Event</h4>
+							<h4>{{ $content['feature_3_title']->value ?? 'Upcoming Event' }}</h4>
 							<h6>The 6th East Africa,Banking & ICT Summit 2018</h6>
 						</div>
-						<p>This annual summit brings together retail banking industry’s high profile CIOs, CTOs and COOs to explore how they can utilize... 
+						<p>{{ $content['feature_3_desc']->value ?? 'This annual summit brings together retail banking industry’s high profile CIOs, CTOs and COOs to explore how they can utilize...' }}
 	 				  </p>
                      
 					</div>
@@ -333,9 +333,8 @@ h1,h2,h3,h4,h5,h6 {
 		<h4>About Cyber Security Africa</h4>
 		
 		<p>
-			Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets.
+			{{ $footerContent['about_us_text']->value ?? 'Cyber Security Africa is a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets. We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives.' }}
 		</p>
-        <p> We provide unrivaled technical services, trusted advises to our clients, a role that allows us to fully understand and help our clients to achieve their organization and security objectives. </p>
 		</section>
 		<section class="one-third">
 		<h4>Our Services</h4>
@@ -351,12 +350,12 @@ h1,h2,h3,h4,h5,h6 {
 		<section class="one-third">
 		<h4>Contact Details</h4>
 		
-        <p>Africa Headquarter: Nairobi, Kenya.</p>
-        <p>Tel: + 254 518 007 755</p>
-            <p>Safaricom: + 254 722 102 854</p>
-            <p>Airtel: + 254 786 629 775</p>
-             <p>Fax: + 254 202 149 857</p>
-        <p> Email: <a href="cdn-cgi/l/email-protection#6b02050d042b0812090e19180e081e19021f120a0d1902080a45080406"><span class="__cf_email__" data-cfemail="345d5a525b74574d56514647515741465d404d5552465d57551a575b59">[email&#160;protected]</span></a></p>
+        <p>{{ $footerContent['contact_address']->value ?? 'Africa Headquarter: Nairobi, Kenya.' }}</p>
+        <p>Tel: {{ $footerContent['contact_tel']->value ?? '+ 254 518 007 755' }}</p>
+            <p>Safaricom: {{ $footerContent['contact_safaricom']->value ?? '+ 254 722 102 854' }}</p>
+            <p>Airtel: {{ $footerContent['contact_airtel']->value ?? '+ 254 786 629 775' }}</p>
+             <p>Fax: {{ $footerContent['contact_fax']->value ?? '+ 254 202 149 857' }}</p>
+        <p> Email: <a href="mailto:{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}">{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}</a></p>
 		</section>
 		</section>
 		</footer>
@@ -364,7 +363,7 @@ h1,h2,h3,h4,h5,h6 {
 		<section class="container">
 		<div class="one-half">
 			<p>
-				 Copyright © 2017 Cyber Security Africa. All Rights Reserved.
+				 {{ $footerContent['copyright_text']->value ?? 'Copyright © 2017 Cyber Security Africa. All Rights Reserved.' }}
 		  </p>
 		</div>
 		<div class="one-half">
