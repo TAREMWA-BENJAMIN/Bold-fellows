@@ -22,8 +22,8 @@ Fraud Investigation, Fraud analysis" />
 <link rel="stylesheet" href="css/flexslider.css" media="screen"/><!-- FLEX SLIDER CSS FILE -->
 <link rel="stylesheet" href="css/revolution-slider.css" media="screen"/><!-- REVOLUTION SLIDER CSS FILE -->
 <!-- All JavaScript Files (FOR FASTER LOADING OF YOUR SITE, REMOVE ALL JS PLUGINS YOU WILL NOT USE)-->
-<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><!-- JQUERY JS FILE -->
-<script type="text/javascript" src="../code.jquery.com/ui/1.10.3/jquery-ui.js"></script><!-- JQUERY UI JS FILE -->
+<script src="ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><!-- JQUERY JS FILE -->
+<script type="text/javascript" src="code.jquery.com/ui/1.10.3/jquery-ui.js"></script><!-- JQUERY UI JS FILE -->
 <script type="text/javascript" src="js/flex-slider.min.js"></script><!-- FLEX SLIDER JS FILE -->
 <script type="text/javascript" src="js/navigation.min.js"></script><!-- MAIN NAVIGATION JS FILE -->
 <script type="text/javascript" src="js/jquery.layerslider.js"></script><!-- LAYER SLIDER JS FILE -->
@@ -124,31 +124,6 @@ h1,h2,h3,h4,h5,h6 {
 					</ul>
 					<!-- Second Level / End -->
                    </li>
-				   <li><a href="training" title="Our Training">Training</a>
-					<!-- Second Level / Start -->
-					<ul>
-						<li><a href="linux-training" title="Linux Training">Linux Training</a></li>
-						<li><a href="ethical-hacking" title="Ethical Hacking">Ethical Hacking</a></li>
-                        <li><a href="anti-money-laundering" title="Anti-Money Laundering">Anti-Money Laundering</a></li>
-						<li><a href="training" title="All Courses">All Courses</a></li>
-						
-					</ul>
-					<!-- Second Level / End -->				   			
-				   				   
-				   </li>
-					<li><a href="events" title="Events">Events</a>
-					<!-- Second Level / Start -->
-					<ul>
-						
-						
-	<li><a href="upcoming-events" title="Upcoming Events">Upcoming Events</a></li>
-
-                        	<li><a href="#" title="East Africa Convention Speakers">Event Speakers</a></li>
-											<li><a href="past-events" title="Past Events">Past Events</a></li>
-						
-					</ul>
-					<!-- Second Level / End -->
-					</li>
 					<li><a href="contact">Contact</a></li>
 			  </ul>
 				<!-- main navigation ends-->
@@ -334,22 +309,6 @@ h1,h2,h3,h4,h5,h6 {
 								</div>
 							</div>
 							</div>
-
-							<div class="one-fourth">
-							<div class="item-wrapp">
-								<div class="portfolio-item">
-									<a href="events" class="item-permalink"><i class="icon-link"></i></a>
-									
-									<img src="images/portfolio/csa-events.jpg" alt=""/>
-								</div>
-								<div class="portfolio-item-title">
-									<a href="events" title="Upcoming Events">Events</a>
-									<p>
-										Security / Services
-									</p>
-								</div>
-							</div>
-							</div>
 							</li>
 							
 						</ul><!-- carousel items UL ends -->
@@ -414,8 +373,6 @@ h1,h2,h3,h4,h5,h6 {
 				<li><a href="about" title="About">About</a></li>
                 <li><a href="services" title="Services">Services</a></li>
                 <li><a href="products" title="Products">Products</a></li>
-				<li><a href="training" title="Training">Training</a></li>
-                <li><a href="events" title="Events">Events</a></li>
 				<li><a href="contact" title="Contact Us">Contact</a></li>
 			</ul>
 		</div>
