@@ -137,10 +137,10 @@
 								<li><a href="security-awareness" title="Security Awareness"><i class="icon-angle-right"></i>Security Awareness</a></li>
 								<li><a href="computer-forensic-incident-handling" title="Computer Forensics"><i class="icon-angle-right"></i>Computer Forensics</a></li>
 								<li><a href="intrusion-detection-prevention" title="Intrusion Detection"><i class="icon-angle-right"></i>Intrusion Detection</a></li>
-	<li><a href="pci-dss" title="PCI DSS Security"><i class="icon-angle-right"></i>PCI DSS Security</a></li>
-    <li><a href="emv-chip-pin" title="EMV Chip &amp; PIN Security"><i class="icon-angle-right"></i>EMV Chip & PIN Security</a></li>
-    <li><a href="mobile-banking-security" title="Mobile Banking Security"><i class="icon-angle-right"></i>Mobile Banking Security</a></li>	
-    <li><a href="source-code-security" title="Source Code Security"><i class="icon-angle-right"></i>Source Code Security</a></li>						
+								<li><a href="pci-dss" title="PCI DSS Security"><i class="icon-angle-right"></i>PCI DSS Security</a></li>
+								<li><a href="emv-chip-pin" title="EMV Chip &amp; PIN Security"><i class="icon-angle-right"></i>EMV Chip & PIN Security</a></li>
+								<li><a href="mobile-banking-security" title="Mobile Banking Security"><i class="icon-angle-right"></i>Mobile Banking Security</a></li>	
+								<li><a href="source-code-security" title="Source Code Security"><i class="icon-angle-right"></i>Source Code Security</a></li>						
 						</ul>
 						</div>
 					</div>

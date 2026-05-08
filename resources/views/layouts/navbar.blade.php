@@ -28,10 +28,6 @@
 			<li><a href="products" title="Our Products" {!! (isset($active) && $active == 'products') ? 'id="current"' : '' !!}>Products</a>
 				<!-- Second Level / Start -->
 				<ul>
-					<li><a href="endpointsecurity" title="Endpoint Security">Endpoint Security</a></li>
-					<li><a href="vulnerabilitymanagement" title="Vulnerability Management">Vulnerability Management</a>
-					</li>
-					<li><a href="datasecurity" title="Data Security">Data Security</a></li>
 					<li><a href="personal-budgeting-planning-system" title="Personal Budgeting & planning system">Personal Budgeting & planning system</a></li>
 					<li><a href="lending-saving-system" title="Lending & Saving System">Lending & Saving System</a></li>
 					<li><a href="inventory-management-system" title="Inventory Management System">Inventory Management System</a></li>
@@ -39,6 +35,10 @@
 					<li><a href="point-of-sale-system" title="Point of Sale System">Point of Sale System</a></li>
 					<li><a href="payment-processing-system" title="Payment Processing System">Payment Processing System</a></li>
 					<li><a href="hospital-clinic-management-system" title="Hospital/Clinic Management System">Hospital/Clinic Management System</a></li>
+					<li><a href="endpointsecurity" title="Endpoint Security">Endpoint Security</a></li>
+					<li><a href="vulnerabilitymanagement" title="Vulnerability Management">Vulnerability Management</a>
+					</li>
+					<li><a href="datasecurity" title="Data Security">Data Security</a></li>
 					<li><a href="products" title="All Products">All Products</a></li>
 				</ul>
 				<!-- Second Level / End -->
