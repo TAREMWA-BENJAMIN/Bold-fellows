@@ -36,7 +36,6 @@ class AdminController extends Controller
             'Home' => [
                 // ── Text fields ────────────────────────────────────────────
                 'slider_1_title'    => ['type' => 'text',     'label' => 'Slider 1 – Title'],
-                'slider_1_subtitle' => ['type' => 'text',     'label' => 'Slider 1 – Subtitle (e.g. Date & Venue)'],
                 'slider_1_desc'     => ['type' => 'textarea', 'label' => 'Slider 1 – Description'],
                 'slider_1_btn_text' => ['type' => 'text',     'label' => 'Slider 1 – Button Text',    'default' => 'View Event Details'],
                 'slider_1_btn_url'  => ['type' => 'text',     'label' => 'Slider 1 – Button URL',     'default' => '6th-Ethiopia-Banking-ICT-Summit'],
@@ -81,6 +80,13 @@ class AdminController extends Controller
                 'about_company_desc_3'    => ['type' => 'textarea', 'label' => 'About the Company Paragraph 3'],
                 'our_philosophy'          => ['type' => 'textarea', 'label' => 'Our Philosophy'],
                 'our_approach'            => ['type' => 'textarea', 'label' => 'Our Unique, Proven Approach'],
+                // ── Skills Level fields ────────────────────────────────────
+                'skill_1_name'  => ['type' => 'text', 'label' => 'Skill 1 – Name',        'default' => 'Penetration Testing'],
+                'skill_1_level' => ['type' => 'text', 'label' => 'Skill 1 – Level (%)',   'default' => '80'],
+                'skill_2_name'  => ['type' => 'text', 'label' => 'Skill 2 – Name',        'default' => 'Security Solutions'],
+                'skill_2_level' => ['type' => 'text', 'label' => 'Skill 2 – Level (%)',   'default' => '100'],
+                'skill_3_name'  => ['type' => 'text', 'label' => 'Skill 3 – Name',        'default' => 'Security Training'],
+                'skill_3_level' => ['type' => 'text', 'label' => 'Skill 3 – Level (%)',   'default' => '90'],
                 // ── Image fields ───────────────────────────────────────────
                 'about_slider_1_img'    => ['type' => 'image', 'label' => 'About Page Slider Image 1',    'default' => 'images/slider/cyber-security.jpg'],
                 'about_slider_2_img'    => ['type' => 'image', 'label' => 'About Page Slider Image 2',    'default' => 'images/slider/about-csa.jpg'],

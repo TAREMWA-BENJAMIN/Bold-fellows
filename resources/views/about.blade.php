@@ -80,26 +80,26 @@
 
 								<li>
 									<p>
-										<i class="icon-pencil"></i>Penetration Testing
+										<i class="icon-pencil"></i>{{ $content['skill_1_name']->value ?? 'Penetration Testing' }}
 									</p>
 									<div class="bar-wrap">
-										<span data-width="80"></span>
+										<span data-width="{{ $content['skill_1_level']->value ?? '80' }}"></span>
 									</div>
 								</li>
 								<li>
 									<p>
-										<i class="icon-cog"></i>Security Solutions
+										<i class="icon-cog"></i>{{ $content['skill_2_name']->value ?? 'Security Solutions' }}
 									</p>
 									<div class="bar-wrap">
-										<span data-width="100"></span>
+										<span data-width="{{ $content['skill_2_level']->value ?? '100' }}"></span>
 									</div>
 								</li>
 								<li>
 									<p>
-										<i class="icon-magic"></i>Security Training
+										<i class="icon-magic"></i>{{ $content['skill_3_name']->value ?? 'Security Training' }}
 									</p>
 									<div class="bar-wrap">
-										<span data-width="90"></span>
+										<span data-width="{{ $content['skill_3_level']->value ?? '90' }}"></span>
 									</div>
 								</li>
 

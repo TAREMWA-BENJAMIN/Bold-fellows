@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-
-<!-- Mirrored from www.cybersecurityafrica.com/contact.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 May 2026 09:25:45 GMT -->
 <head>
 <meta charset="utf-8">
 <title>Contacts | Bold Fellows</title>
@@ -20,13 +17,31 @@
 	</header>
 		<!-- header ends-->
 		<div id="content">
-		
+			<div id="breadcrumb"><!-- breadcrumb starts-->
+				<div class="container">
+					<div class="one-half">
+						<h4>Contact Us</h4>
+					</div>
+					<div class="one-half">
+						<nav id="breadcrumbs"><!--breadcrumb nav starts-->
+							<ul>
+								<li>You are here:</li>
+								<li><a href="index">Home</a></li>
+								<li>Contact</li>
+							</ul>
+						</nav><!--breadcrumb nav ends -->
+					</div>
+				</div>
+			</div><!--breadcrumbs ends -->
+
 			<div id="google-map">
-		<iframe width="1920" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://spatialstream.maps.arcgis.com/home/webmap/embedViewer?webmap=ec4aae22d78e4ddca6019bfc844a6cca&amp;extent=36.8016,-1.2647,36.8072,-1.2618"></iframe>
+				<iframe width="1920" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7251!2d32.5913!3d0.3356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb0b72b8bca9%3A0x1234567890abcdef!2s135%20Kira%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1715420000000"
+					allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<div class="container">
 				<section class="three-fourth">
-				<form action="https://www.cybersecurityafrica.com/send_form_email" id="contact-form" class="simple-form " method="post">
+				<form action="#" id="contact-form" class="simple-form" method="post">
 							<fieldset class="one-fourth">
 								<i class="icon-user"></i><input type="text" name="first_name" value="Your Name" onblur="if(this.value=='')this.value='Your Name';" onfocus="if(this.value=='Your Name')this.value='';" class="text requiredField" name="name"/>
 							</fieldset>
@@ -51,9 +66,9 @@
 					<h4 class="widget-title">Contact Information</h4>
 					<ul class="simple-list">
 										
-						<li>{{ $content['address']->value ?? 'Africa Headquarters: Nairobi, Kenya' }}</li>
-						<li>{!! nl2br(e($content['phone_numbers']->value ?? "Tel: + 254 518 007 755\nSafaricom: + 254 722 102 854\nAirtel: + 254 786 629 775\nAirtel: + 254 735 002 040\nFax: + 254 202 149 857")) !!}</li>
-                        <li>Email: <a href="mailto:{{ $content['email']->value ?? 'info@cybersecurityafrica.com' }}">{{ $content['email']->value ?? 'info@cybersecurityafrica.com' }}</a></li>
+						<li>{{ $content['address']->value ?? '135 Kira Rd, Kampala, Uganda' }}</li>
+						<li>{!! nl2br(e($content['phone_numbers']->value ?? "Tel: +256 700 000 000")) !!}</li>
+                        <li>Email: <a href="mailto:{{ $content['email']->value ?? 'boldfellows4@gmail.com' }}">{{ $content['email']->value ?? 'boldfellows4@gmail.com' }}</a></li>
 				  </ul>
 					
 				</div>
