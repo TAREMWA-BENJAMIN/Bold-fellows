@@ -49,8 +49,9 @@ Route::get('/{page?}', function ($page = 'index') {
 
         // Always fetch Footer content
         $footerContent = \App\Models\FrontendContent::where('section', 'Footer Section')->get()->keyBy('key');
+        $headerContent = \App\Models\FrontendContent::where('section', 'Header Settings')->get()->keyBy('key');
 
-        return view($page, compact('content', 'footerContent'));
+        return view($page, compact('content', 'footerContent', 'headerContent'));
     }
 
     abort(404);

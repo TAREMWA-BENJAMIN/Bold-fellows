@@ -21,7 +21,7 @@ class AdminController extends Controller
                 'label'  => 'Main Pages',
                 'icon'   => 'fa-file-alt',
                 'color'  => 'indigo',
-                'items'  => ['Home', 'About Us', 'Contact', 'Footer Section'],
+                'items'  => ['Home', 'About Us', 'Contact', 'Header Settings', 'Footer Section'],
             ],
             'services' => [
                 'label'  => 'Our Services',
@@ -66,7 +66,7 @@ class AdminController extends Controller
         $sections = array_keys($this->getSchema('__all__') + []) ?: [];
         // Build slug => name map from all schema keys
         $allNames = [
-            'Home', 'About Us', 'Our Services', 'Products', 'Contact', 'Footer Section',
+            'Home', 'About Us', 'Our Services', 'Products', 'Contact', 'Header Settings', 'Footer Section',
             'App & Software Development', 'Software Supplies & Maintenance', 'Web Hosting',
             'Penetration Testing', 'IT Consultancy & Advisory', 'Cybersecurity Services',
             'Personal Budgeting & Planning System', 'Lending & Saving System',
@@ -218,6 +218,13 @@ class AdminController extends Controller
                 'address' => ['type' => 'textarea', 'label' => 'Address Details'],
                 'phone_numbers' => ['type' => 'textarea', 'label' => 'Phone Numbers'],
                 'email' => ['type' => 'text', 'label' => 'Email Address'],
+            ],
+            'Header Settings' => [
+                'header_address' => ['type' => 'text', 'label' => 'Header Address', 'default' => 'Headquarter: Kampala, Uganda'],
+                'header_email' => ['type' => 'text', 'label' => 'Header Email', 'default' => 'boldfellows4@gmail.com'],
+                'social_twitter' => ['type' => 'text', 'label' => 'Twitter URL', 'default' => 'https://twitter.com/cybersecafrica'],
+                'social_facebook' => ['type' => 'text', 'label' => 'Facebook URL', 'default' => '#'],
+                'social_linkedin' => ['type' => 'text', 'label' => 'LinkedIn URL', 'default' => 'http://www.linkedin.com/company/cyber-security-africa'],
             ],
             'Footer Section' => [
                 'about_us_text' => ['type' => 'textarea', 'label' => 'About Us Text (Column 1)'],
