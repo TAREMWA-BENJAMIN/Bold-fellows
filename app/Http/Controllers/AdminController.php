@@ -219,6 +219,7 @@ class AdminController extends Controller
                 'address' => ['type' => 'textarea', 'label' => 'Address Details'],
                 'phone_numbers' => ['type' => 'textarea', 'label' => 'Phone Numbers'],
                 'email' => ['type' => 'text', 'label' => 'Email Address'],
+                'map_url' => ['type' => 'textarea', 'label' => 'Google Maps Embed URL', 'default' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7251!2d32.5913!3d0.3356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb0b72b8bca9%3A0x1234567890abcdef!2s135%20Kira%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1715420000000'],
             ],
             'Header Settings' => [
                 'header_address' => ['type' => 'text', 'label' => 'Header Address', 'default' => 'Headquarter: Kampala, Uganda'],
