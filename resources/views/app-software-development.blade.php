@@ -47,7 +47,7 @@
 											</a>
 
 											@php 
-												$bannerUrl = asset('images/blog/app-software-development.jpg'); 
+												$bannerUrl = asset($content['banner_img']->value ?? 'images/blog/app-software-development.jpg'); 
 											@endphp
 
 											<img src="{{ $bannerUrl }}" 
@@ -67,36 +67,22 @@
 								</div>
 								<div class="post-intro">
 									<p align="justify">
-										At Bold Fellows, we design and build powerful, scalable, and user-friendly
-										software solutions tailored to meet the unique demands of modern businesses.
-										From mobile applications to complex enterprise systems, our development team
-										delivers innovative products that drive growth and efficiency.
+										{!! nl2br(e($content['intro_text']->value ?? 'At Bold Fellows, we design and build powerful, scalable, and user-friendly software solutions tailored to meet the unique demands of modern businesses. From mobile applications to complex enterprise systems, our development team delivers innovative products that drive growth and efficiency.')) !!}
 									</p>
 									<p align="justify">
-										We follow industry best practices throughout the software development lifecycle
-										— from requirements gathering and UI/UX design through development, testing, and
-										deployment — ensuring that every solution we deliver is robust, secure, and
-										future-ready.
+										{!! nl2br(e($content['details_text']->value ?? 'We follow industry best practices throughout the software development lifecycle — from requirements gathering and UI/UX design through development, testing, and deployment — ensuring that every solution we deliver is robust, secure, and future-ready.')) !!}
 									</p>
 
-									<p align="justify"><strong>Why Choose Bold Fellows for Software
-											Development?</strong></p>
+									<p align="justify"><strong>Why Choose Bold Fellows for Software Development?</strong></p>
 									<ul class="simple-list">
-										<li><i class="icon-check-sign"></i> Experienced team of certified developers and
-											designers</li>
-										<li><i class="icon-check-sign"></i> Agile methodology for fast, iterative
-											delivery</li>
-										<li><i class="icon-check-sign"></i> End-to-end project management and
-											transparency</li>
-										<li><i class="icon-check-sign"></i> Security-first approach built into every
-											stage</li>
-										<li><i class="icon-check-sign"></i> Competitive pricing with on-time delivery
-										</li>
+										<li><i class="icon-check-sign"></i> {{ $content['why_choose_1']->value ?? 'Experienced team of certified developers and designers' }}</li>
+										<li><i class="icon-check-sign"></i> {{ $content['why_choose_2']->value ?? 'Agile methodology for fast, iterative delivery' }}</li>
+										<li><i class="icon-check-sign"></i> {{ $content['why_choose_3']->value ?? 'End-to-end project management and transparency' }}</li>
+										<li><i class="icon-check-sign"></i> {{ $content['why_choose_4']->value ?? 'Security-first approach built into every stage' }}</li>
+										<li><i class="icon-check-sign"></i> {{ $content['why_choose_5']->value ?? 'Competitive pricing with on-time delivery' }}</li>
 									</ul>
 									<p align="justify">
-										Whether you are a startup looking to build your first app or an established
-										organisation seeking to modernise legacy systems, Bold Fellows is your trusted
-										technology partner. Contact us today to discuss your project.
+										{!! nl2br(e($content['conclusion_text']->value ?? 'Whether you are a startup looking to build your first app or an established organisation seeking to modernise legacy systems, Bold Fellows is your trusted technology partner. Contact us today to discuss your project.')) !!}
 									</p>
 								</div>
 							</div>
@@ -107,23 +93,11 @@
 							<div class="widget">
 								<h4 class="widget-title">Our Services</h4>
 								<ul class="sidebar-nav">
-									<li class="active"><a href="app-software-development"
-											title="App &amp; Software Development"><i class="icon-angle-right"></i>App
-											&amp; Software Development</a></li>
-									<li><a href="software-supplies-maintenance"
-											title="Software Supplies &amp; Maintenance"><i
-												class="icon-angle-right"></i>Software Supplies &amp; Maintenance</a>
-									</li>
-									<li><a href="web-hosting" title="Web Hosting"><i class="icon-angle-right"></i>Web
-											Hosting</a></li>
-									<li><a href="penetration-testing" title="Penetration Testing"><i
-												class="icon-angle-right"></i>Penetration Testing</a></li>
-									<li><a href="it-consultancy-advisory" title="IT Consultancy &amp; Advisory"><i
-												class="icon-angle-right"></i>IT Consultancy &amp; Advisory</a></li>
-									<li><a href="cybersecurity-services" title="Cybersecurity Services"><i
-												class="icon-angle-right"></i>Cybersecurity Services</a></li>
-									<li><a href="services" title="All Services"><i class="icon-angle-right"></i>All
-											Services</a></li>
+									<li class="active"><a href="app-software-development" title="App &amp; Software Development"><i class="icon-angle-right"></i>App &amp; Software Development</a></li>
+									<li><a href="software-supplies-maintenance" title="Software Supplies &amp; Maintenance"><i class="icon-angle-right"></i>Software Supplies &amp; Maintenance</a></li>
+									<li><a href="web-hosting" title="Web Hosting"><i class="icon-angle-right"></i>Web Hosting</a></li>
+									<li><a href="it-consultancy-advisory" title="IT Consultancy &amp; Advisory"><i class="icon-angle-right"></i>IT Consultancy &amp; Advisory</a></li>
+									<li><a href="cybersecurity-services" title="Cybersecurity Services"><i class="icon-angle-right"></i>Cybersecurity Services</a></li>
 								</ul>
 							</div>
 						</div>

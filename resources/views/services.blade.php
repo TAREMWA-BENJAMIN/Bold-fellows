@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 
-<!-- Mirrored from www.cybersecurityafrica.com/services.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 May 2026 09:25:04 GMT -->
 
 <head>
 	<meta charset="utf-8">
@@ -17,9 +16,9 @@
 		<div id="wrapp">
 			<!-- main wrapp starts-->
 			<header id="header" class="header-3">
-		@include('layouts.header_links')
-		@include('layouts.navbar', ['active' => 'services'])
-	</header>
+				@include('layouts.header_links')
+				@include('layouts.navbar', ['active' => 'services'])
+			</header>
 			<!-- header ends-->
 			<div id="content">
 				<div id="breadcrumb">
@@ -151,13 +150,15 @@
 						</div>
 						<div class="one-third">
 							<p>
-								<img src="{{ asset($content['services_team_img_1']->value ?? 'images/team/network-security-assessment.jpg') }}" alt=" " />
+								<img src="{{ asset($content['services_team_img_1']->value ?? 'images/team/network-security-assessment.jpg') }}"
+									alt=" " />
 							</p>
 
 						</div>
 						<div class="one-third">
 							<p>
-								<img src="{{ asset($content['services_team_img_2']->value ?? 'images/team/web-app-security.jpg') }}" alt=" " />
+								<img src="{{ asset($content['services_team_img_2']->value ?? 'images/team/web-app-security.jpg') }}"
+									alt=" " />
 							</p>
 
 						</div>
@@ -176,7 +177,8 @@
 												<a href="network-security-assessment" class="item-permalink"><i
 														class="icon-link"></i></a>
 
-												<img src="{{ asset($content['services_portfolio_pentest']->value ?? 'images/portfolio/pen-test.jpg') }}" alt="" />
+												<img src="{{ asset($content['services_portfolio_pentest']->value ?? 'images/portfolio/pen-test.jpg') }}"
+													alt="" />
 											</div>
 											<div class="portfolio-item-title">
 												<a href="penetration-testing">Penetration Testing</a>
@@ -197,7 +199,8 @@
 												<a href="fraud-investigation-services" class="item-permalink"><i
 														class="icon-link"></i></a>
 
-												<img src="{{ asset($content['services_portfolio_fraud']->value ?? 'images/portfolio/fraud.jpg') }}" alt="" />
+												<img src="{{ asset($content['services_portfolio_fraud']->value ?? 'images/portfolio/fraud.jpg') }}"
+													alt="" />
 											</div>
 											<div class="portfolio-item-title">
 												<a href="fraud-investigation-services">Fraud Investigation Services</a>
@@ -218,4 +221,5 @@
 
 			@include('layouts.footer')
 </body>
+
 </html>

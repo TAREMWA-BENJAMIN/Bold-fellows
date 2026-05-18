@@ -7,6 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="images/favicon.gif" />
 	@include('layouts.assets')
+	<style>
+		.single-portfolio-item-slider .slides li img {
+			width: 100%;
+			height: 400px;
+			object-fit: cover;
+			object-position: center;
+			display: block;
+		}
+	</style>
 </head>
 
 <body>
@@ -42,9 +51,12 @@
 						<section class="flex-container">
 							<div class="flexslider single-portfolio-item-slider bottom-margin">
 								<ul class="slides round">
-									<li><img src="{{ asset($content['about_slider_1_img']->value ?? 'images/slider/cyber-security.jpg') }}" alt=" " /></li>
-									<li><img src="{{ asset($content['about_slider_2_img']->value ?? 'images/slider/about-csa.jpg') }}" alt=" " /></li>
-									<li><img src="{{ asset($content['about_slider_3_img']->value ?? 'images/slider/about-csa-1.jpg') }}" alt=" " /></li>
+									<li><img src="{{ asset($content['about_slider_1_img']->value ?? 'images/slider/cyber-security.jpg') }}"
+											alt=" " /></li>
+									<li><img src="{{ asset($content['about_slider_2_img']->value ?? 'images/slider/about-csa.jpg') }}"
+											alt=" " /></li>
+									<li><img src="{{ asset($content['about_slider_3_img']->value ?? 'images/slider/about-csa-1.jpg') }}"
+											alt=" " /></li>
 								</ul>
 							</div>
 
@@ -80,7 +92,8 @@
 
 								<li>
 									<p>
-										<i class="icon-pencil"></i>{{ $content['skill_1_name']->value ?? 'Penetration Testing' }}
+										<i
+											class="icon-pencil"></i>{{ $content['skill_1_name']->value ?? 'Penetration Testing' }}
 									</p>
 									<div class="bar-wrap">
 										<span data-width="{{ $content['skill_1_level']->value ?? '80' }}"></span>
@@ -88,7 +101,8 @@
 								</li>
 								<li>
 									<p>
-										<i class="icon-cog"></i>{{ $content['skill_2_name']->value ?? 'Security Solutions' }}
+										<i
+											class="icon-cog"></i>{{ $content['skill_2_name']->value ?? 'Security Solutions' }}
 									</p>
 									<div class="bar-wrap">
 										<span data-width="{{ $content['skill_2_level']->value ?? '100' }}"></span>
@@ -96,7 +110,8 @@
 								</li>
 								<li>
 									<p>
-										<i class="icon-magic"></i>{{ $content['skill_3_name']->value ?? 'Security Training' }}
+										<i
+											class="icon-magic"></i>{{ $content['skill_3_name']->value ?? 'Security Training' }}
 									</p>
 									<div class="bar-wrap">
 										<span data-width="{{ $content['skill_3_level']->value ?? '90' }}"></span>
@@ -144,13 +159,14 @@
 											<div class="portfolio-item">
 												<a href="about" class="item-permalink"><i class="icon-link"></i></a>
 
-												<img src="{{ asset($content['about_portfolio_1_img']->value ?? 'images/portfolio/why-cyber-sec-africa.jpg') }}" alt="" />
+												<img src="{{ asset($content['about_portfolio_1_img']->value ?? 'images/portfolio/why-cyber-sec-africa.jpg') }}"
+													alt="" />
 											</div>
 											<div class="portfolio-item-title">
 												<a href="about" title="Why Bold Fellows">Why Cyber Security
 													Africa</a>
 												<p>
-													Security / Services
+													Security / Assessments
 												</p>
 											</div>
 										</div>
@@ -161,12 +177,13 @@
 											<div class="portfolio-item">
 												<a href="services" class="item-permalink"><i class="icon-link"></i></a>
 
-												<img src="{{ asset($content['about_portfolio_2_img']->value ?? 'images/portfolio/csa-services.jpg') }}" alt="" />
+												<img src="{{ asset($content['about_portfolio_2_img']->value ?? 'images/portfolio/csa-services.jpg') }}"
+													alt="" />
 											</div>
 											<div class="portfolio-item-title">
 												<a href="services" title="Our Services">Our Services</a>
 												<p>
-													Security / Services
+													Security / Assessments
 												</p>
 											</div>
 										</div>
@@ -177,12 +194,13 @@
 											<div class="portfolio-item">
 												<a href="products" class="item-permalink"><i class="icon-link"></i></a>
 
-												<img src="{{ asset($content['about_portfolio_3_img']->value ?? 'images/portfolio/csa-products.jpg') }}" alt="" />
+												<img src="{{ asset($content['about_portfolio_3_img']->value ?? 'images/portfolio/csa-products.jpg') }}"
+													alt="" />
 											</div>
 											<div class="portfolio-item-title">
 												<a href="products" title="Our Services">Our Products</a>
 												<p>
-													Security / Services
+													Security / Assessments
 												</p>
 											</div>
 										</div>
