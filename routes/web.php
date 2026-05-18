@@ -11,7 +11,14 @@ Route::prefix('admin')->group(function () {
     Route::get('/manage-pages', [AdminController::class, 'managePages'])->name('admin.manage-pages');
     Route::get('/manage-pages/{section}', [AdminController::class, 'editSection'])->name('admin.edit-section')->where('section', '[^/]+');
     Route::post('/manage-pages/{section}', [AdminController::class, 'updateSection'])->name('admin.update-section')->where('section', '[^/]+');
+
+    // Inquiries
+    Route::get('/inquiries', [AdminController::class, 'inquiries'])->name('admin.inquiries');
+    Route::get('/inquiries/{id}', [AdminController::class, 'viewInquiry'])->name('admin.view-inquiry');
+    Route::delete('/inquiries/{id}', [AdminController::class, 'deleteInquiry'])->name('admin.delete-inquiry');
 });
+
+Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');
 
 Route::get('/{page?}', function ($page = 'index') {
     $page = str_replace(['.php', '.html'], '', $page);

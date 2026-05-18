@@ -41,18 +41,39 @@
 			</div>
 			<div class="container">
 				<section class="three-fourth">
-				<form action="#" id="contact-form" class="simple-form" method="post">
+					@if(session('success'))
+						<div style="padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #3c763d; background-color: #dff0d8; border-color: #d6e9c6;">
+							{{ session('success') }}
+						</div>
+					@endif
+					@if(session('error'))
+						<div style="padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #a94442; background-color: #f2dede; border-color: #ebccd1;">
+							{{ session('error') }}
+						</div>
+					@endif
+					@if ($errors->any())
+						<div style="padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; color: #a94442; background-color: #f2dede; border-color: #ebccd1;">
+							<ul style="margin: 0; padding-left: 20px;">
+								@foreach ($errors->all() as $error)
+									<li>{{ $error }}</li>
+								@endforeach
+							</ul>
+						</div>
+					@endif
+
+				<form action="{{ route('contact.submit') }}" id="contact-form" class="simple-form" method="post">
+					@csrf
 							<fieldset class="one-fourth">
-								<i class="icon-user"></i><input type="text" name="first_name" value="Your Name" onblur="if(this.value=='')this.value='Your Name';" onfocus="if(this.value=='Your Name')this.value='';" class="text requiredField" name="name"/>
+								<i class="icon-user"></i><input type="text" name="name" value="{{ old('name') }}" placeholder="Your Name" class="text requiredField" required/>
 							</fieldset>
 							<fieldset class="one-fourth">
-								<i class="icon-envelope"></i><input type="text" name="email" value="Your Email" onblur="if(this.value=='')this.value='Your Email';" onfocus="if(this.value=='Your Email')this.value='';" class="requiredField email" name="email"/>
+								<i class="icon-envelope"></i><input type="email" name="email" value="{{ old('email') }}" placeholder="Your Email" class="requiredField email" required/>
 							</fieldset>
 							<fieldset class="one-fourth">
-								<i class="icon-globe"></i><input type="text" name="website" value="Your Organization" onblur="if(this.value=='')this.value='Your Website';" onfocus="if(this.value=='Your Website')this.value='';" class="url" name="url"/>
+								<i class="icon-globe"></i><input type="text" name="organization" value="{{ old('organization') }}" placeholder="Your Organization" class="text"/>
 							</fieldset>
 							<fieldset class="three-fourth">
-								<textarea cols="30" rows="12" name="comments" value="Your Message" onblur="if(this.value=='')this.value='Your Message';" onfocus="if(this.value=='Your Message')this.value='';" class="text requiredField" name="message"></textarea>
+								<textarea cols="30" rows="12" name="message" placeholder="Your Message" class="text requiredField" required>{{ old('message') }}</textarea>
 							</fieldset>
 							<div class="three-fourth">
 							<div class="g-recaptcha" data-sitekey="6LcQ9xEUAAAAACq0gZmJJD_BMzXFJIdIrZMbLQRJ"></div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\FrontendContent;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
+use App\Models\ContactMessage;
 
 class AdminController extends Controller
 {
@@ -471,5 +472,28 @@ class AdminController extends Controller
         }
 
         return redirect()->back()->with('success', 'Content updated successfully!');
+    }
+
+    public function inquiries()
+    {
+        $messages = ContactMessage::orderBy('created_at', 'desc')->paginate(15);
+        return view('admin.inquiries.index', compact('messages'));
+    }
+
+    public function viewInquiry($id)
+    {
+        $message = ContactMessage::findOrFail($id);
+        if (!$message->is_read) {
+            $message->is_read = true;
+            $message->save();
+        }
+        return view('admin.inquiries.show', compact('message'));
+    }
+
+    public function deleteInquiry($id)
+    {
+        $message = ContactMessage::findOrFail($id);
+        $message->delete();
+        return redirect()->route('admin.inquiries')->with('success', 'Message deleted successfully!');
     }
 }

@@ -1,7 +1,7 @@
 <section class="footer-call-to-action"><!-- footer call to action starts -->
 	<section class="container">
 		<div class="three-fourth">
-			<h4>If youâ€™re interested in our services or products, feel free to contact us via contact form.</h4>
+			<h4>If interested in our services or products, feel free to contact us via contact form.</h4>
 		</div>
 		<div class="one-fourth">
 			<a href="contact" class="button grey huge round">Contact Us</a>

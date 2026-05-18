@@ -38,6 +38,18 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('admin.inquiries') }}" class="flex items-center justify-between px-6 py-3 {{ request()->routeIs('admin.inquiries') || request()->routeIs('admin.view-inquiry') ? 'sidebar-active border-l-4 border-white' : 'hover:bg-opacity-20 hover:bg-white text-gray-300' }}">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope w-6 text-center"></i>
+                            <span class="ml-3">Inquiries</span>
+                        </div>
+                        @php $unreadCount = \App\Models\ContactMessage::where('is_read', false)->count(); @endphp
+                        @if($unreadCount > 0)
+                            <span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">{{ $unreadCount }}</span>
+                        @endif
+                    </a>
+                </li>
+                <li>
                     <a href="#" class="flex items-center px-6 py-3 text-gray-300 hover:bg-opacity-20 hover:bg-white">
                         <i class="fas fa-hdd w-6 text-center"></i>
                         <span class="ml-3">Cache</span>
