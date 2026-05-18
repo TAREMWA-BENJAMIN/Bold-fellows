@@ -5,9 +5,8 @@ use App\Http\Controllers\AdminController;
 
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {
-        return redirect()->route('admin.dashboard');
+        return redirect()->route('admin.manage-pages');
     });
-    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/manage-pages', [AdminController::class, 'managePages'])->name('admin.manage-pages');
     Route::get('/manage-pages/{section}', [AdminController::class, 'editSection'])->name('admin.edit-section')->where('section', '[^/]+');
     Route::post('/manage-pages/{section}', [AdminController::class, 'updateSection'])->name('admin.update-section')->where('section', '[^/]+');

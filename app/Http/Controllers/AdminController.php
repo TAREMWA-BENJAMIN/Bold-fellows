@@ -10,11 +10,6 @@ use App\Models\ContactMessage;
 
 class AdminController extends Controller
 {
-    public function dashboard()
-    {
-        return view('admin.dashboard');
-    }
-
     public function managePages()
     {
         $sections = [

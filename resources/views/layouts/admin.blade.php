@@ -26,15 +26,9 @@
         <nav class="flex-1 py-4">
             <ul class="space-y-1">
                 <li>
-                    <a href="{{ route('admin.dashboard') }}" class="flex items-center px-6 py-3 {{ request()->routeIs('admin.dashboard') ? 'sidebar-active border-l-4 border-white' : 'hover:bg-opacity-20 hover:bg-white text-gray-300' }}">
+                    <a href="{{ route('admin.manage-pages') }}" class="flex items-center px-6 py-3 {{ request()->routeIs('admin.manage-pages') || request()->routeIs('admin.edit-section') ? 'sidebar-active border-l-4 border-white' : 'hover:bg-opacity-20 hover:bg-white text-gray-300' }}">
                         <i class="fas fa-home w-6 text-center"></i>
                         <span class="ml-3">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('admin.manage-pages') }}" class="flex items-center px-6 py-3 {{ request()->routeIs('admin.manage-pages') || request()->routeIs('admin.edit-section') ? 'sidebar-active border-l-4 border-white' : 'hover:bg-opacity-20 hover:bg-white text-gray-300' }}">
-                        <i class="fas fa-file-alt w-6 text-center"></i>
-                        <span class="ml-3">Manage Pages</span>
                     </a>
                 </li>
                 <li>
