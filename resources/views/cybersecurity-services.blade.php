@@ -66,18 +66,7 @@
 						</div>
 						<!-- Sidebar -->
 						<div class="one-fourth sidebar right">
-							<div class="widget">
-								<h4 class="widget-title">Our Services</h4>
-								<ul class="sidebar-nav">
-									<li><a href="app-software-development" title="App &amp; Software Development"><i class="icon-angle-right"></i>App &amp; Software Development</a></li>
-									<li><a href="software-supplies-maintenance" title="Software Supplies &amp; Maintenance"><i class="icon-angle-right"></i>Software Supplies &amp; Maintenance</a></li>
-									<li><a href="web-hosting" title="Web Hosting"><i class="icon-angle-right"></i>Web Hosting</a></li>
-									<li><a href="penetration-testing" title="Penetration Testing"><i class="icon-angle-right"></i>Penetration Testing</a></li>
-									<li><a href="it-consultancy-advisory" title="IT Consultancy &amp; Advisory"><i class="icon-angle-right"></i>IT Consultancy &amp; Advisory</a></li>
-									<li class="active"><a href="cybersecurity-services" title="Cybersecurity Services"><i class="icon-angle-right"></i>Cybersecurity Services</a></li>
-									<li><a href="services" title="All Services"><i class="icon-angle-right"></i>All Services</a></li>
-								</ul>
-							</div>
+							@include('layouts.services_sidebar')
 						</div>
 						<!-- Sidebar end -->
 					</div>

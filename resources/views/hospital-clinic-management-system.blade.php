@@ -66,22 +66,7 @@
 						</div>
 						<!-- Sidebar -->
 						<div class="one-fourth sidebar right">
-							<div class="widget">
-								<h4 class="widget-title">Our Products</h4>
-								<ul class="sidebar-nav">
-									<li><a href="personal-budgeting-planning-system"><i class="icon-angle-right"></i>Personal Budgeting &amp; Planning System</a></li>
-									<li><a href="lending-saving-system"><i class="icon-angle-right"></i>Lending &amp; Saving System</a></li>
-									<li><a href="inventory-management-system"><i class="icon-angle-right"></i>Inventory Management System</a></li>
-									<li><a href="e-learning-system"><i class="icon-angle-right"></i>E-Learning System</a></li>
-									<li><a href="point-of-sale-system"><i class="icon-angle-right"></i>Point of Sale System</a></li>
-									<li><a href="payment-processing-system"><i class="icon-angle-right"></i>Payment Processing System</a></li>
-									<li class="active"><a href="hospital-clinic-management-system"><i class="icon-angle-right"></i>Hospital/Clinic Management System</a></li>
-									<li><a href="endpointsecurity"><i class="icon-angle-right"></i>Endpoint Security</a></li>
-									<li><a href="vulnerabilitymanagement"><i class="icon-angle-right"></i>Vulnerability Management</a></li>
-									<li><a href="datasecurity"><i class="icon-angle-right"></i>Data Security Assessment</a></li>
-									<li><a href="products"><i class="icon-angle-right"></i>All Products</a></li>
-								</ul>
-							</div>
+							@include('layouts.products_sidebar')
 						</div>
 						<!-- Sidebar end -->
 					</div>

@@ -46,23 +46,60 @@
 						<div class="one-third">
 							<div class="service-item">
 								<!--service item starts -->
-								<h1>
-									<i class="icon-cloud"></i>
-								</h1>
-								<h4>{{ $content['service_1_title']->value ?? 'Penetration Testing' }}</h4>
+								<div class="service-image" style="margin-bottom: 20px;"><img
+										src="{{ asset($content['service_1_img']->value ?? 'images/blog/app-software-development.jpg') }}"
+										alt=""
+										style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+								</div>
+								<h4>{{ $content['service_1_title']->value ?? 'App & Software Development' }}</h4>
 								<p>
-									{{ $content['service_1_desc']->value ?? 'A penetration test is a simulation of a hacker attack on a network, system, application or website used to discover existing weaknesses before hackers find and exploit them.We determine feasibility of an attack and the amount of business impact of a successful network compromise.' }}
+									{{ $content['service_1_desc']->value ?? 'We build custom software solutions ranging from mobile apps to robust enterprise applications, ensuring scalability, security, and high performance to meet your business needs.' }}
 								</p>
 								<p>
-									<br /><a href="penetration-testing" class="button big round color">Read More</a>
+									<br /><a href="app-software-development" class="button big round color">Read
+										More</a>
 								</p>
 							</div>
 							<!--service item ends -->
 						</div>
-
-
-						<div class="horizontal-line">
+						<div class="one-third">
+							<div class="service-item">
+								<!--service item starts -->
+								<div class="service-image" style="margin-bottom: 20px;"><img
+										src="{{ asset($content['service_2_img']->value ?? 'images/portfolio/csa-services.jpg') }}"
+										alt=""
+										style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+								</div>
+								<h4>{{ $content['service_2_title']->value ?? 'Software Supplies & Maintenance' }}</h4>
+								<p>
+									{{ $content['service_2_desc']->value ?? 'We provide licensed software supplies and offer ongoing maintenance, updates, and support to ensure your systems remain reliable and secure.' }}
+								</p>
+								<p>
+									<br /><a href="software-supplies-maintenance" class="button big round color">Read
+										More</a>
+								</p>
+							</div>
+							<!--service item ends -->
 						</div>
+						<div class="one-third">
+							<div class="service-item">
+								<!--service item starts -->
+								<div class="service-image" style="margin-bottom: 20px;"><img
+										src="{{ asset($content['service_3_img']->value ?? 'images/portfolio/csa-products.jpg') }}"
+										alt=""
+										style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+								</div>
+								<h4>{{ $content['service_3_title']->value ?? 'Web Hosting' }}</h4>
+								<p>
+									{{ $content['service_3_desc']->value ?? 'Reliable, fast, and secure web hosting solutions tailored for businesses of all sizes. Enjoy maximum uptime, automated backups, and 24/7 technical support.' }}
+								</p>
+								<p>
+									<br /><a href="web-hosting" class="button big round color">Read More</a>
+								</p>
+							</div>
+							<!--service item ends -->
+						</div>
+						<div class="horizontal-line"></div>
 					</div>
 
 					<div class="container">
@@ -70,18 +107,17 @@
 							<div class="one-third">
 								<div class="service-item">
 									<!--service item starts -->
-									<h1>
-										<i class="icon-dollar"></i>
-									</h1>
-									<h4>Fraud Investigation</h4>
+									<div class="service-image" style="margin-bottom: 20px;"><img
+											src="{{ asset($content['service_4_img']->value ?? 'images/blog/security-consulting.jpg') }}"
+											alt=""
+											style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+									</div>
+									<h4>{{ $content['service_4_title']->value ?? 'IT Consultancy & Advisory' }}</h4>
 									<p>
-										Bold Fellows team of Forensic and Certified Fraud Examiners conduct
-										investigations on Computer fraud, employee embezzlement, kickback schemes and
-										financial statement fraud. We use variety of tools and resources to uncover and
-										correct illegal activities that can undermine the profitability of...
+										{{ $content['service_4_desc']->value ?? 'Expert IT guidance to help you navigate digital transformation. We align technology strategies with business objectives to maximize efficiency and ROI.' }}
 									</p>
 									<p>
-										<br /><a href="fraud-investigation-services" class="button big round color">Read
+										<br /><a href="it-consultancy-advisory" class="button big round color">Read
 											More</a>
 									</p>
 								</div>
@@ -90,44 +126,23 @@
 							<div class="one-third">
 								<div class="service-item">
 									<!--service item starts -->
-									<h1>
-										<i class="icon-mobile-phone "></i>
-									</h1>
-									<h4>Mobile Phone Forensics </h4>
+									<div class="service-image" style="margin-bottom: 20px;"><img
+											src="{{ asset($content['service_5_img']->value ?? 'images/portfolio/why-cyber-sec-africa.jpg') }}"
+											alt=""
+											style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+									</div>
+									<h4>{{ $content['service_5_title']->value ?? 'Cybersecurity Services' }}</h4>
 									<p>
-										Bold Fellows Mobile Forensic team are able to extract key evidence from
-										cellular phones, Smartphones, PDAâ€™s, GPS units and other mobile devices. Using
-										specialized software and equipment designed specifically for advanced cell phone
-										forensics, We are able to extract active and deleted data from many...
+										{{ $content['service_5_desc']->value ?? 'Protect your digital assets with our comprehensive cybersecurity services, including penetration testing, threat monitoring, and vulnerability assessments.' }}
 									</p>
 									<p>
-										<br /><a href="mobile-phone-forensics" class="button big round color">Read
+										<br /><a href="cybersecurity-services" class="button big round color">Read
 											More</a>
 									</p>
 								</div>
 								<!--service item ends -->
 							</div>
-							<div class="one-third">
-								<div class="service-item">
-									<!--service item starts -->
-									<h1>
-										<i class="icon-lock"></i>
-									</h1>
-									<h4>IT Governance</h4>
-									<p>
-										IT governance is a critical component of corporate governance, it provides a
-										useful tool for benchmarking the balance and effectiveness of IT governance
-										practices within an organization. It also provides structured guidance on how to
-										approach practical assistance and guidance for practitioners in an Organization.
-									</p>
-									<p>
-										<br /><a href="it-governance" class="button big round color">Read More</a>
-									</p>
-								</div>
-								<!--service item ends -->
-							</div>
-							<div class="horizontal-line">
-							</div>
+							<div class="horizontal-line"></div>
 						</div>
 					</div>
 					<div class="one">
@@ -140,11 +155,9 @@
 								following:
 							</p>
 							<ul class="simple-list">
-								<li><i class="icon-check-sign"></i>Network Security Assesment</li>
-
-								<li><i class="icon-check-sign"></i>IT Governance</li>
-
-
+								<li><i class="icon-check-sign"></i>App & Software Development</li>
+								<li><i class="icon-check-sign"></i>Software Supplies & Maintenance</li>
+								<li><i class="icon-check-sign"></i>Web Hosting</li>
 							</ul>
 
 						</div>
@@ -164,59 +177,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="intro-features"><!-- intro features panel starts -->
-					<div class="container">
-						<h4>Popular Services</h4>
-						<div class="slidewrap">
-							<!--project carousel starts-->
-							<ul class="slider" id="sliderName">
-								<li class="slide"><!-- carousel item starts -->
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="network-security-assessment" class="item-permalink"><i
-														class="icon-link"></i></a>
 
-												<img src="{{ asset($content['services_portfolio_pentest']->value ?? 'images/portfolio/pen-test.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="penetration-testing">Penetration Testing</a>
-												<p>
-													Security / Services
-												</p>
-											</div>
-										</div>
-									</div>
-
-
-
-
-
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="fraud-investigation-services" class="item-permalink"><i
-														class="icon-link"></i></a>
-
-												<img src="{{ asset($content['services_portfolio_fraud']->value ?? 'images/portfolio/fraud.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="fraud-investigation-services">Fraud Investigation Services</a>
-												<p>
-													Security / Services
-												</p>
-											</div>
-										</div>
-									</div>
-								</li>
-
-							</ul><!-- carousel items UL ends -->
-
-						</div>
-					</div>
-				</div><!-- intro features panel ends -->
 			</div>
 
 			@include('layouts.footer')

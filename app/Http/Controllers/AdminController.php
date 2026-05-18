@@ -166,17 +166,26 @@ class AdminController extends Controller
             'Our Services' => [
                 // ── Text fields ────────────────────────────────────────────
                 'services_intro' => ['type' => 'textarea', 'label' => 'Services Intro Paragraph'],
-                'service_1_title' => ['type' => 'text', 'label' => 'Service 1 Title'],
+                'service_1_title' => ['type' => 'text', 'label' => 'Service 1 Title (App & Software Development)'],
                 'service_1_desc' => ['type' => 'textarea', 'label' => 'Service 1 Description'],
-                'service_2_title' => ['type' => 'text', 'label' => 'Service 2 Title'],
+                'service_2_title' => ['type' => 'text', 'label' => 'Service 2 Title (Software Supplies & Maintenance)'],
                 'service_2_desc' => ['type' => 'textarea', 'label' => 'Service 2 Description'],
-                'service_3_title' => ['type' => 'text', 'label' => 'Service 3 Title'],
+                'service_3_title' => ['type' => 'text', 'label' => 'Service 3 Title (Web Hosting)'],
                 'service_3_desc' => ['type' => 'textarea', 'label' => 'Service 3 Description'],
+                'service_4_title' => ['type' => 'text', 'label' => 'Service 4 Title (IT Consultancy & Advisory)'],
+                'service_4_desc' => ['type' => 'textarea', 'label' => 'Service 4 Description'],
+                'service_5_title' => ['type' => 'text', 'label' => 'Service 5 Title (Cybersecurity Services)'],
+                'service_5_desc' => ['type' => 'textarea', 'label' => 'Service 5 Description'],
                 // ── Image fields ───────────────────────────────────────────
-                'services_team_img_1' => ['type' => 'image', 'label' => 'Services Section Image 1 (Network Security)', 'default' => 'images/team/network-security-assessment.jpg'],
-                'services_team_img_2' => ['type' => 'image', 'label' => 'Services Section Image 2 (Web App Security)', 'default' => 'images/team/web-app-security.jpg'],
-                'services_portfolio_pentest' => ['type' => 'image', 'label' => 'Popular Services: Penetration Testing Image', 'default' => 'images/portfolio/pen-test.jpg'],
-                'services_portfolio_fraud' => ['type' => 'image', 'label' => 'Popular Services: Fraud Investigation Image', 'default' => 'images/portfolio/fraud.jpg'],
+                'service_1_img' => ['type' => 'image', 'label' => 'Service 1 Image', 'default' => 'images/blog/app-software-development.jpg'],
+                'service_2_img' => ['type' => 'image', 'label' => 'Service 2 Image', 'default' => 'images/portfolio/csa-services.jpg'],
+                'service_3_img' => ['type' => 'image', 'label' => 'Service 3 Image', 'default' => 'images/portfolio/csa-products.jpg'],
+                'service_4_img' => ['type' => 'image', 'label' => 'Service 4 Image', 'default' => 'images/blog/security-consulting.jpg'],
+                'service_5_img' => ['type' => 'image', 'label' => 'Service 5 Image', 'default' => 'images/portfolio/why-cyber-sec-africa.jpg'],
+                'services_team_img_1' => ['type' => 'image', 'label' => 'Services Section Image 1', 'default' => 'images/team/network-security-assessment.jpg'],
+                'services_team_img_2' => ['type' => 'image', 'label' => 'Services Section Image 2', 'default' => 'images/team/web-app-security.jpg'],
+                'services_portfolio_1' => ['type' => 'image', 'label' => 'Popular Services Image 1', 'default' => 'images/portfolio/pen-test.jpg'],
+                'services_portfolio_2' => ['type' => 'image', 'label' => 'Popular Services Image 2', 'default' => 'images/portfolio/fraud.jpg'],
             ],
             'Products' => [
                 // ── Text fields ────────────────────────────────────────────

@@ -88,22 +88,7 @@
 
 						<!-- Sidebar -->
 						<div class="one-fourth sidebar right">
-							<div class="widget">
-								<h4 class="widget-title">Our Products</h4>
-								<ul class="sidebar-nav">
-									<li><a href="personal-budgeting-planning-system" title="Personal Budgeting &amp; Planning System"><i class="icon-angle-right"></i>Personal Budgeting &amp; Planning System</a></li>
-									<li><a href="lending-saving-system" title="Lending &amp; Saving System"><i class="icon-angle-right"></i>Lending &amp; Saving System</a></li>
-									<li class="active"><a href="inventory-management-system" title="Inventory Management System"><i class="icon-angle-right"></i>Inventory Management System</a></li>
-									<li><a href="e-learning-system" title="E-Learning System"><i class="icon-angle-right"></i>E-Learning System</a></li>
-									<li><a href="point-of-sale-system" title="Point of Sale System"><i class="icon-angle-right"></i>Point of Sale System</a></li>
-									<li><a href="payment-processing-system" title="Payment Processing System"><i class="icon-angle-right"></i>Payment Processing System</a></li>
-									<li><a href="hospital-clinic-management-system" title="Hospital/Clinic Management System"><i class="icon-angle-right"></i>Hospital/Clinic Management System</a></li>
-									<li><a href="endpointsecurity" title="Endpoint Security"><i class="icon-angle-right"></i>Endpoint Security</a></li>
-									<li><a href="vulnerabilitymanagement" title="Vulnerability Management"><i class="icon-angle-right"></i>Vulnerability Management</a></li>
-									<li><a href="datasecurity" title="Data Security"><i class="icon-angle-right"></i>Data Security Assessment</a></li>
-									<li><a href="products" title="All Products"><i class="icon-angle-right"></i>All Products</a></li>
-								</ul>
-							</div>
+							@include('layouts.products_sidebar')
 						</div>
 						<!-- Sidebar end -->
 
