@@ -14,13 +14,19 @@
     </style>
 </head>
 <body class="flex h-screen overflow-hidden text-gray-800">
+    <!-- Mobile Overlay -->
+    <div id="mobileOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 hidden md:hidden" onclick="toggleSidebar()"></div>
+
     <!-- Sidebar -->
-    <aside class="w-64 sidebar text-white flex flex-col h-full">
-        <div class="h-20 flex items-center justify-center border-b border-gray-700">
+    <aside id="sidebar" class="w-64 sidebar text-white flex flex-col h-full fixed md:relative z-30 transition-transform duration-300 transform -translate-x-full md:translate-x-0">
+        <div class="h-20 flex items-center justify-between px-6 border-b border-gray-700">
             <!-- Placeholder for Logo -->
             <div class="bg-white rounded-full h-12 w-12 flex items-center justify-center overflow-hidden">
                 <span class="text-xs text-black font-bold text-center">LOGO</span>
             </div>
+            <button onclick="toggleSidebar()" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fas fa-times text-xl"></i>
+            </button>
         </div>
         
         <nav class="flex-1 py-4">
@@ -56,8 +62,11 @@
     <!-- Main Content -->
     <div class="flex-1 flex flex-col overflow-hidden">
         <!-- Top Header -->
-        <header class="h-20 bg-white border-b border-gray-200 flex items-center px-8 z-10">
-            <h1 class="text-xl text-gray-700 font-semibold">@yield('header_title', 'Admin Dashboard')</h1>
+        <header class="h-20 bg-white border-b border-gray-200 flex items-center px-4 sm:px-8 z-10 w-full">
+            <button onclick="toggleSidebar()" class="md:hidden mr-4 text-gray-600 hover:text-gray-900 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            <h1 class="text-xl text-gray-700 font-semibold truncate">@yield('header_title', 'Admin Dashboard')</h1>
         </header>
 
         <!-- Main Body -->
@@ -71,5 +80,14 @@
             @yield('content')
         </main>
     </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('mobileOverlay');
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>

@@ -64,28 +64,31 @@
 					</div>
 
 					<div class="one-third">
-						<h4>Company Brief</h4>
 
-
-						<p align="justify">
-							{!! nl2br(e($content['company_brief']->value ?? 'Our dedicated consultancy team has extensive experience, and is fully up to date with the latest technology and scientific developments.')) !!}
-						</p>
-
-
-						<ul class="simple-list">
-							<li><i
-									class="icon-check-sign"></i>{{ $content['our_mission']->value ?? 'Our Mission: To build a community of information security for Africa.' }}
-							</li>
-
-							<li><i
-									class="icon-check-sign"></i>{{ $content['our_vision']->value ?? 'Our Vision: To set new standard in Information Communication Technology and Security.' }}
-							</li>
-							<li><i
-									class="icon-check-sign"></i>{{ $content['our_values']->value ?? 'Our Values: Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and Effectiveness.' }}
-							</li>
-							<p>
-							<h4>Our Skills level</h4>
+						<div style="margin-bottom: 20px;">
+							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Mission</h5>
+							<p style="text-align: justify;">
+								{{ preg_replace('/^(Our\s*)?Mission:\s*/i', '', $content['our_mission']->value ?? 'Our Mission: To build a community of information security for Africa.') }}
 							</p>
+						</div>
+
+						<div style="margin-bottom: 20px;">
+							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Vision</h5>
+							<p style="text-align: justify;">
+								{{ preg_replace('/^(Our\s*)?Vision:\s*/i', '', $content['our_vision']->value ?? 'Our Vision: To set new standard in Information Communication Technology and Security.') }}
+							</p>
+						</div>
+
+						<div style="margin-bottom: 20px;">
+							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Values</h5>
+							<p style="text-align: justify;">
+								{{ preg_replace('/^(Our\s*)?Values:\s*/i', '', $content['our_values']->value ?? 'Our Values: Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and Effectiveness.') }}
+							</p>
+						</div>
+
+						<div style="margin-top: 30px;">
+							<h4>Our Skills level</h4>
+						</div>
 
 							<ul class="bar_graph">
 								<!-- skill graph starts -->
@@ -119,7 +122,6 @@
 								</li>
 
 							</ul>
-						</ul> <!--skill graph ends -->
 					</div>
 					<div class="two-third">
 						<h4>About the Company</h4>

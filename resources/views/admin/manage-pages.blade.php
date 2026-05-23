@@ -17,12 +17,12 @@
                 <h2 class="text-xl font-semibold text-gray-700">Content Management</h2>
                 <p class="text-sm text-gray-400 mt-1">Select any section below to edit its content.</p>
             </div>
-            <div class="relative">
+            <div class="relative w-full sm:w-auto">
                 <span class="absolute inset-y-0 left-0 flex items-center pl-3">
                     <i class="fas fa-search text-gray-400 text-sm"></i>
                 </span>
                 <input type="text" id="searchInput" placeholder="Search sections..."
-                    class="border border-gray-200 rounded-md py-2 pl-10 pr-4 text-sm w-64 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-gray-600">
+                    class="border border-gray-200 rounded-md py-2 pl-10 pr-4 text-sm w-full sm:w-64 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-gray-600">
             </div>
         </div>
 

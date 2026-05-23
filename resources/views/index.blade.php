@@ -165,12 +165,9 @@ Fraud Investigation, Fraud analysis" />
 			<div id="content">
 				<div class="home-intro"><!-- home intro starts-->
 					<div class="container">
-						<div class="three-fourth">
-							<h4>{{ $content['intro_title']->value ?? 'Cyber Security Consultancy and Training' }}</h4>
-
-						</div>
-						<div class="one-fourth">
-							<a href="past-events" class="button grey huge round">Past Events</a>
+						<div class="one" style="text-align: center;">
+							<h4><b>{{ $content['intro_title']->value ?? 'Cyber Security Consultancy and Training' }}</b>
+							</h4>
 						</div>
 					</div>
 				</div>
