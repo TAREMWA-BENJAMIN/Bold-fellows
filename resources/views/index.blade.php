@@ -62,7 +62,7 @@ Fraud Investigation, Fraud analysis" />
 					style="slidedirection: top; slidedelay: 6000; durationin: 1500; durationout: 1500; delayout: 500;">
 					<img src="{{ asset($content['slider_1_bg']->value ?? 'images/slider/layer/1/slide1-bg.jpg') }}"
 						class="ls-bg" alt="">
-					<img src="images/slider/layer/1/6thEthiopia.png" class="ls-s6" alt=""
+					<img src="{{ asset($content['slider_1_fg']->value ?? 'images/slider/layer/1/6thEthiopia.png') }}" class="ls-s6" alt=""
 						style="top: 10px; left: -15px; slidedirection : bottom; slideoutdirection : bottom; durationin : 1500; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 600;">
 					<h1 class="ls-s3 ls_large_text_01"
 						style="position: absolute; top:100px; left: 490px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000;">
@@ -87,7 +87,7 @@ Fraud Investigation, Fraud analysis" />
 					style="slidedirection: top; slidedelay: 6000; durationin: 1500; durationout: 1500; delayout: 500;">
 					<img src="{{ asset($content['slider_2_bg']->value ?? 'images/slider/layer/1/slide2-bg.jpg') }}"
 						class="ls-bg" alt="">
-					<img src="images/slider/layer/1/slide0-5.png" class="ls-s6" alt=""
+					<img src="{{ asset($content['slider_2_fg']->value ?? 'images/slider/layer/1/slide0-5.png') }}" class="ls-s6" alt=""
 						style="top: 10px; left: -15px; slidedirection : bottom; slideoutdirection : bottom; durationin : 1500; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 600;">
 					<h1 class="ls-s3 ls_large_text_01"
 						style="position: absolute; top:100px; left: 490px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 1000; font-family: 'Century Gothic', Arial, Verdana;">
@@ -113,7 +113,7 @@ Fraud Investigation, Fraud analysis" />
 					style="slidedirection: right; slidedelay: 5000; durationin: 1500; durationout: 1500;">
 					<img src="{{ asset($content['slider_3_bg']->value ?? 'images/slider/layer/2/slide3-bg.jpg') }}"
 						class="ls-bg" alt="">
-					<img src="images/slider/layer/2/item-01.png" class="ls-s6" alt=""
+					<img src="{{ asset($content['slider_3_fg']->value ?? 'images/slider/layer/2/item-01.png') }}" class="ls-s6" alt=""
 						style="top: 15px; left: 480px; slidedirection : bottom; slideoutdirection : bottom; durationin : 1500; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 600;">
 					<h1 class="ls-s3 ls_large_text_01"
 						style="position: absolute; font-family:'Century Gothic', Arial, Verdana; top:100px; left: 0px; slidedirection : right; slideoutdirection : left; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 400;">
@@ -130,7 +130,7 @@ Fraud Investigation, Fraud analysis" />
 					style="slidedirection: right; slideoutdirection : top; slidedelay: 5000; durationin: 1500; durationout: 1500; delayout: 500;">
 					<img src="{{ asset($content['slider_4_bg']->value ?? 'images/slider/layer/3/slide4-bg.jpg') }}"
 						class="ls-bg" alt="">
-					<img src="images/slider/layer/3/slide3-pic1.png" class="ls-s6" alt=""
+					<img src="{{ asset($content['slider_4_fg']->value ?? 'images/slider/layer/3/slide3-pic1.png') }}" class="ls-s6" alt=""
 						style="top: 25px; left: 0px; slidedirection : fade; slideoutdirection : fade; durationin : 1500; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 500;">
 					<h1 class="ls-s3 ls_large_text_01"
 						style="position: absolute; top:120px; left: 400px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 600;">
@@ -147,7 +147,7 @@ Fraud Investigation, Fraud analysis" />
 					style="slidedirection: top; slideoutdirection : top; slidedelay: 5000; durationin: 1500; durationout: 1500; delayout: 500;">
 					<img src="{{ asset($content['slider_5_bg']->value ?? 'images/slider/layer/4/slide4-bg.jpg') }}"
 						class="ls-bg" alt="">
-					<img src="images/slider/layer/4/slider_4_man.png" class="ls-s6" alt=""
+					<img src="{{ asset($content['slider_5_fg']->value ?? 'images/slider/layer/4/slider_4_man.png') }}" class="ls-s6" alt=""
 						style="top: 10px; left:550px; slidedirection : bottom; slideoutdirection : bottom; durationin : 1500; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 300;">
 					<h1 class="ls-s3 ls_large_text_01"
 						style="position: absolute; top:100px; left: 0px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500;">
@@ -217,83 +217,7 @@ Fraud Investigation, Fraud analysis" />
 						</div>
 					</div><!--features block ends-->
 				</div>
-
-
-
-				<div class="intro-features"><!-- intro features panel starts -->
-					<div class="container">
-
-						<div class="slidewrap">
-							<!--project carousel starts-->
-							<ul class="slider" id="sliderName">
-								<li class="slide"><!-- carousel item starts -->
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="about" class="item-permalink"><i class="icon-link"></i></a>
-
-												<img src="{{ asset($content['home_portfolio_1_img']->value ?? 'images/portfolio/why-cyber-sec-africa.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="about" title="Why Bold Fellows">Why Bold Fellows</a>
-
-											</div>
-										</div>
-									</div>
-
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="services" class="item-permalink"><i class="icon-link"></i></a>
-
-												<img src="{{ asset($content['home_portfolio_2_img']->value ?? 'images/portfolio/csa-services.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="services" title="Our Services">Our Services</a>
-
-											</div>
-										</div>
-									</div>
-
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="products" class="item-permalink"><i class="icon-link"></i></a>
-
-												<img src="{{ asset($content['home_portfolio_3_img']->value ?? 'images/portfolio/csa-products.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="products" title="Our Services">Our Products</a>
-
-											</div>
-										</div>
-									</div>
-
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="products" class="item-permalink"><i class="icon-link"></i></a>
-
-												<img src="{{ asset($content['home_portfolio_3_img']->value ?? 'images/portfolio/csa-products.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="products" title="Our Services">Contacts
-												</a>
-
-											</div>
-										</div>
-									</div>
-								</li>
-
-							</ul><!-- carousel items UL ends -->
-
-						</div>
-					</div>
-				</div><!-- intro features panel ends -->
+				@include('layouts.portfolio_carousel')
 
 				@include('layouts.footer')
 </body>

@@ -125,13 +125,19 @@ class AdminController extends Controller
                 'feature_3_desc' => ['type' => 'textarea', 'label' => 'Feature 3 Description'],
                 // ── Image fields ───────────────────────────────────────────
                 'slider_1_bg' => ['type' => 'image', 'label' => 'Slider 1 – Background Image', 'default' => 'images/slider/layer/1/slide1-bg.jpg'],
+                'slider_1_fg' => ['type' => 'image', 'label' => 'Slider 1 – Foreground Image', 'default' => 'images/slider/layer/1/6thEthiopia.png'],
                 'slider_2_bg' => ['type' => 'image', 'label' => 'Slider 2 – Background Image', 'default' => 'images/slider/layer/1/slide2-bg.jpg'],
+                'slider_2_fg' => ['type' => 'image', 'label' => 'Slider 2 – Foreground Image', 'default' => 'images/slider/layer/1/slide0-5.png'],
                 'slider_3_bg' => ['type' => 'image', 'label' => 'Slider 3 – Background Image', 'default' => 'images/slider/layer/2/slide3-bg.jpg'],
+                'slider_3_fg' => ['type' => 'image', 'label' => 'Slider 3 – Foreground Image', 'default' => 'images/slider/layer/2/item-01.png'],
                 'slider_4_bg' => ['type' => 'image', 'label' => 'Slider 4 – Background Image', 'default' => 'images/slider/layer/3/slide4-bg.jpg'],
+                'slider_4_fg' => ['type' => 'image', 'label' => 'Slider 4 – Foreground Image', 'default' => 'images/slider/layer/3/slide3-pic1.png'],
                 'slider_5_bg' => ['type' => 'image', 'label' => 'Slider 5 – Background Image', 'default' => 'images/slider/layer/4/slide4-bg.jpg'],
+                'slider_5_fg' => ['type' => 'image', 'label' => 'Slider 5 – Foreground Image', 'default' => 'images/slider/layer/4/slider_4_man.png'],
                 'home_portfolio_1_img' => ['type' => 'image', 'label' => 'Portfolio Image 1 (Why Bold Fellows)', 'default' => 'images/portfolio/why-cyber-sec-africa.jpg'],
                 'home_portfolio_2_img' => ['type' => 'image', 'label' => 'Portfolio Image 2 (Our Services)', 'default' => 'images/portfolio/csa-services.jpg'],
                 'home_portfolio_3_img' => ['type' => 'image', 'label' => 'Portfolio Image 3 (Our Products)', 'default' => 'images/portfolio/csa-products.jpg'],
+                'home_portfolio_4_img' => ['type' => 'image', 'label' => 'Portfolio Image 4 (Contacts)', 'default' => 'images/portfolio/csa-products.jpg'],
             ],
             'About Us' => [
                 // ── Text fields ────────────────────────────────────────────
@@ -155,9 +161,7 @@ class AdminController extends Controller
                 'about_slider_1_img' => ['type' => 'image', 'label' => 'About Page Slider Image 1', 'default' => 'images/slider/cyber-security.jpg'],
                 'about_slider_2_img' => ['type' => 'image', 'label' => 'About Page Slider Image 2', 'default' => 'images/slider/about-csa.jpg'],
                 'about_slider_3_img' => ['type' => 'image', 'label' => 'About Page Slider Image 3', 'default' => 'images/slider/about-csa-1.jpg'],
-                'about_portfolio_1_img' => ['type' => 'image', 'label' => 'About Portfolio Image 1 (Why Bold Fellows)', 'default' => 'images/portfolio/why-cyber-sec-africa.jpg'],
-                'about_portfolio_2_img' => ['type' => 'image', 'label' => 'About Portfolio Image 2 (Our Services)', 'default' => 'images/portfolio/csa-services.jpg'],
-                'about_portfolio_3_img' => ['type' => 'image', 'label' => 'About Portfolio Image 3 (Our Products)', 'default' => 'images/portfolio/csa-products.jpg'],
+
             ],
             'Our Services' => [
                 // ── Text fields ────────────────────────────────────────────
@@ -178,8 +182,6 @@ class AdminController extends Controller
                 'service_3_img' => ['type' => 'image', 'label' => 'Service 3 Image', 'default' => 'images/portfolio/csa-products.jpg'],
                 'service_4_img' => ['type' => 'image', 'label' => 'Service 4 Image', 'default' => 'images/blog/security-consulting.jpg'],
                 'service_5_img' => ['type' => 'image', 'label' => 'Service 5 Image', 'default' => 'images/portfolio/why-cyber-sec-africa.jpg'],
-                'services_team_img_1' => ['type' => 'image', 'label' => 'Services Section Image 1', 'default' => 'images/team/network-security-assessment.jpg'],
-                'services_team_img_2' => ['type' => 'image', 'label' => 'Services Section Image 2', 'default' => 'images/team/web-app-security.jpg'],
                 'services_portfolio_1' => ['type' => 'image', 'label' => 'Popular Services Image 1', 'default' => 'images/portfolio/pen-test.jpg'],
                 'services_portfolio_2' => ['type' => 'image', 'label' => 'Popular Services Image 2', 'default' => 'images/portfolio/fraud.jpg'],
             ],

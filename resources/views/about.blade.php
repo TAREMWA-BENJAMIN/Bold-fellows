@@ -149,74 +149,7 @@
 					</div>
 
 				</div>
-				<div class="intro-features"><!-- intro features panel starts -->
-					<div class="container">
-						<h4>Bold Fellows</h4>
-						<div class="slidewrap">
-							<!--project carousel starts-->
-							<ul class="slider" id="sliderName">
-								<li class="slide"><!-- carousel item starts -->
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="about" class="item-permalink"><i class="icon-link"></i></a>
-
-												<img src="{{ asset($content['about_portfolio_1_img']->value ?? 'images/portfolio/why-cyber-sec-africa.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="about" title="Why Bold Fellows">Why Cyber Security
-													Africa</a>
-												<p>
-													Security / Assessments
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="services" class="item-permalink"><i class="icon-link"></i></a>
-
-												<img src="{{ asset($content['about_portfolio_2_img']->value ?? 'images/portfolio/csa-services.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="services" title="Our Services">Our Services</a>
-												<p>
-													Security / Assessments
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="one-fourth">
-										<div class="item-wrapp">
-											<div class="portfolio-item">
-												<a href="products" class="item-permalink"><i class="icon-link"></i></a>
-
-												<img src="{{ asset($content['about_portfolio_3_img']->value ?? 'images/portfolio/csa-products.jpg') }}"
-													alt="" />
-											</div>
-											<div class="portfolio-item-title">
-												<a href="products" title="Our Services">Our Products</a>
-												<p>
-													Security / Assessments
-												</p>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="slide"><!-- carousel item starts -->
-								</li>
-							</ul><!-- carousel items UL ends -->
-
-
-							</ul>
-						</div>
-					</div>
-				</div><!-- intro features panel ends -->
+				@include('layouts.portfolio_carousel')
 			</div>
 
 			@include('layouts.footer')
