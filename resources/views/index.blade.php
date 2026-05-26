@@ -119,12 +119,13 @@ Fraud Investigation, Fraud analysis" />
 						style="position: absolute; font-family:'Century Gothic', Arial, Verdana; top:100px; left: 0px; slidedirection : right; slideoutdirection : left; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 400;">
 						{!! $content['slider_3_title']->value ?? 'Network Management <br>and Security Training' !!}
 					</h1>
-					<h4 class="ls-s3 l1-s1 ls_large_text_02"
-						style="position: absolute; top:160px; left: 0px; border-color:#fff; slidedirection : bottom; slideoutdirection : left; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500;">
-					</h4>
+					<p align="left" class="ls-s3 l1-s1 ls_large_text_07"
+						style="color: #FFF; width: 600px; position: absolute; top:190px; left: 0px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500;">
+						{!! nl2br(e($content['slider_3_desc']->value ?? 'Bold Fellows provides interactive and comprehensive e-learning solutions, professional network management, and security training programs designed to equip your team with cutting-edge skills.')) !!}
+					</p>
 					<a class="button huge color round ls-s8"
 						href="{{ $content['slider_3_btn_url']->value ?? 'training' }}"
-						style="position: absolute; top:210px; left: 0px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0;">{{ $content['slider_3_btn_text']->value ?? 'Training Courses' }}</a>
+						style="position: absolute; top:310px; left: 0px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 600;">{{ $content['slider_3_btn_text']->value ?? 'Training Courses' }}</a>
 				</div>
 				<div class="ls-layer"
 					style="slidedirection: right; slideoutdirection : top; slidedelay: 5000; durationin: 1500; durationout: 1500; delayout: 500;">
@@ -133,15 +134,16 @@ Fraud Investigation, Fraud analysis" />
 					<img src="{{ asset($content['slider_4_fg']->value ?? 'images/slider/layer/3/slide3-pic1.png') }}" class="ls-s6" alt=""
 						style="top: 25px; left: 0px; slidedirection : fade; slideoutdirection : fade; durationin : 1500; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 500;">
 					<h1 class="ls-s3 ls_large_text_01"
-						style="position: absolute; top:120px; left: 400px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 600;">
+						style="position: absolute; top:100px; left: 400px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 600;">
 						{!! $content['slider_4_title']->value ?? 'We advice, consult, install <br> and customize solutions' !!}
 					</h1>
-					<h1 class="ls-s3 l1-s1 ls_large_text_02"
-						style="position: absolute; top:170px; left: 400px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 700;">
-					</h1>
+					<p align="left" class="ls-s3 l1-s1 ls_large_text_07"
+						style="color: #FFF; position: absolute; top:190px; left: 400px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 700;">
+						{!! nl2br(e($content['slider_4_desc']->value ?? 'Maximize your business efficiency with BoldPos, our state-of-the-art Point of Sale system. We consult, install, and customize solutions tailored to your retail operations.')) !!}
+					</p>
 					<a class="button huge color round ls-s8"
 						href="{{ $content['slider_4_btn_url']->value ?? 'products' }}"
-						style="position: absolute; top:210px; left: 400px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 800;">{{ $content['slider_4_btn_text']->value ?? 'Products Overview' }}</a>
+						style="position: absolute; top:310px; left: 400px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 800;">{{ $content['slider_4_btn_text']->value ?? 'Products Overview' }}</a>
 				</div>
 				<div class="ls-layer"
 					style="slidedirection: top; slideoutdirection : top; slidedelay: 5000; durationin: 1500; durationout: 1500; delayout: 500;">
@@ -153,12 +155,13 @@ Fraud Investigation, Fraud analysis" />
 						style="position: absolute; top:100px; left: 0px; slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500;">
 						{!! $content['slider_5_title']->value ?? 'We test across full spectrum <br> of potential vulnerability' !!}
 					</h1>
-					<h4 class="ls-s3 l1-s1 ls_large_text_02"
-						style="position: absolute; top:160px; left: 0px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 600;">
-					</h4>
+					<p align="left" class="ls-s3 l1-s1 ls_large_text_07"
+						style="color: #FFF; width: 600px; position: absolute; top:190px; left: 0px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 600;">
+						{!! nl2br(e($content['slider_5_desc']->value ?? 'Improve healthcare delivery with our Hospital/Clinic Management System, streamlining patient records, clinical workflows, and medical billing securely.')) !!}
+					</p>
 					<a class="button huge color round ls-s8"
 						href="{{ $content['slider_5_btn_url']->value ?? 'contact' }}"
-						style="position: absolute; top:210px; left: 0px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 700;">{{ $content['slider_5_btn_text']->value ?? 'Contact Us' }}</a>
+						style="position: absolute; top:310px; left: 0px; slidedirection : bottom; slideoutdirection : bottom; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 700;">{{ $content['slider_5_btn_text']->value ?? 'Contact Us' }}</a>
 				</div>
 			</div>
 			<!--layer slider ends-->

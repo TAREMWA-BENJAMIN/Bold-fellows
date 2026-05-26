@@ -66,28 +66,28 @@
 					<div class="one-third">
 
 						<div style="margin-bottom: 20px;">
-							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Mission</h5>
+							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; color: #000; font-weight: bold;">Mission</h5>
 							<p style="text-align: justify;">
 								{{ preg_replace('/^(Our\s*)?Mission:\s*/i', '', $content['our_mission']->value ?? 'Our Mission: To build a community of information security for Africa.') }}
 							</p>
 						</div>
 
 						<div style="margin-bottom: 20px;">
-							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Vision</h5>
+							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; color: #000; font-weight: bold;">Vision</h5>
 							<p style="text-align: justify;">
 								{{ preg_replace('/^(Our\s*)?Vision:\s*/i', '', $content['our_vision']->value ?? 'Our Vision: To set new standard in Information Communication Technology and Security.') }}
 							</p>
 						</div>
 
 						<div style="margin-bottom: 20px;">
-							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px;">Values</h5>
+							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; color: #000; font-weight: bold;">Values</h5>
 							<p style="text-align: justify;">
 								{{ preg_replace('/^(Our\s*)?Values:\s*/i', '', $content['our_values']->value ?? 'Our Values: Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and Effectiveness.') }}
 							</p>
 						</div>
 
 						<div style="margin-top: 30px;">
-							<h4>Our Skills level</h4>
+							<h4 style="color: #000; font-weight: bold;">Our Skills level</h4>
 						</div>
 
 							<ul class="bar_graph">
@@ -124,7 +124,7 @@
 							</ul>
 					</div>
 					<div class="two-third">
-						<h4>About the Company</h4>
+						<h4 style="color: #000; font-weight: bold;">About the Company</h4>
 
 
 

@@ -42,6 +42,14 @@
 				</div>
 				<!--breadcrumbs ends -->
 				<div class="container">
+					@if(isset($content['services_intro']->value) && !empty(trim($content['services_intro']->value)))
+						<div class="one" style="margin-bottom: 40px; text-align: center;">
+							<p style="font-size: 16px; line-height: 1.6; color: #555; max-width: 800px; margin: 0 auto;">
+								{!! nl2br(e($content['services_intro']->value)) !!}
+							</p>
+							<div class="horizontal-line"></div>
+						</div>
+					@endif
 					<div class="one">
 						@php
 							$servicePages = [
@@ -56,16 +64,23 @@
 
 						@foreach($servicePages as $index => $srv)
 							@php
-								$srvContent = \App\Models\FrontendContent::where('section', $srv['title'])->get()->keyBy('key');
+								$num = $index + 1;
+								$titleKey = "service_{$num}_title";
+								$descKey = "service_{$num}_desc";
+								$imgKey = "service_{$num}_img";
+
+								$title = (isset($content[$titleKey]->value) && !empty(trim($content[$titleKey]->value))) ? $content[$titleKey]->value : $srv['title'];
+								$desc = (isset($content[$descKey]->value) && !empty(trim($content[$descKey]->value))) ? $content[$descKey]->value : $srv['desc_fallback'];
+								$img = (isset($content[$imgKey]->value) && !empty(trim($content[$imgKey]->value))) ? asset($content[$imgKey]->value) : asset($srv['img_fallback']);
 							@endphp
 							<div class="one-third">
 								<div class="service-item">
 									<div class="service-image" style="margin-bottom: 20px;">
-										<img src="{{ asset($srvContent['banner_img']->value ?? $srv['img_fallback']) }}" alt="" style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+										<img src="{{ $img }}" alt="{{ $title }}" style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
 									</div>
-									<h4>{{ $srv['title'] }}</h4>
+									<h4>{{ $title }}</h4>
 									<p>
-										{{ \Illuminate\Support\Str::limit(strip_tags($srvContent['intro_text']->value ?? $srv['desc_fallback']), 150) }}
+										{{ \Illuminate\Support\Str::limit(strip_tags($desc), 150) }}
 									</p>
 									<p>
 										<br /><a href="{{ $srv['slug'] }}" class="button big round color">Read More</a>
