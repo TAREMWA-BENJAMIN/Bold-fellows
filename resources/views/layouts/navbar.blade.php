@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="head-wrapp">
-		<a href="index" id="logo"><img src="{{ asset('images/logo.png') }}" alt="Bold fellows" width="182"
+		<a href="index" id="logo"><img src="{{ (isset($headerContent['logo']->value) && !empty(trim($headerContent['logo']->value))) ? asset($headerContent['logo']->value) : asset('images/logo.png') }}" alt="Bold fellows" width="182"
 				height="85" /><span></span></a>
 		<!--your logo-->
 		<ul class="main-menu alternative">

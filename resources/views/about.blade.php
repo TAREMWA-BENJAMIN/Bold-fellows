@@ -81,9 +81,11 @@
 
 						<div style="margin-bottom: 20px;">
 							<h5 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; color: #000; font-weight: bold;">Values</h5>
-							<p style="text-align: justify;">
-								{{ preg_replace('/^(Our\s*)?Values:\s*/i', '', $content['our_values']->value ?? 'Our Values: Integrity, Customer Centric, Innovation, Teamwork, Collaboration, Efficiency and Effectiveness.') }}
-							</p>
+							<ul class="simple-list" style="margin-left: 0; padding-left: 0; list-style: none;">
+								<li style="margin-bottom: 8px;"><i class="icon-check-sign" style="color: #5a4bfa; margin-right: 8px;"></i> {{ (isset($content['our_value_1']->value) && !empty(trim($content['our_value_1']->value))) ? $content['our_value_1']->value : 'Integrity & Transparency' }}</li>
+								<li style="margin-bottom: 8px;"><i class="icon-check-sign" style="color: #5a4bfa; margin-right: 8px;"></i> {{ (isset($content['our_value_2']->value) && !empty(trim($content['our_value_2']->value))) ? $content['our_value_2']->value : 'Innovation & Continuous Learning' }}</li>
+								<li style="margin-bottom: 8px;"><i class="icon-check-sign" style="color: #5a4bfa; margin-right: 8px;"></i> {{ (isset($content['our_value_3']->value) && !empty(trim($content['our_value_3']->value))) ? $content['our_value_3']->value : 'Efficiency, Effectiveness & Customer Centricity' }}</li>
+							</ul>
 						</div>
 
 						<div style="margin-top: 30px;">

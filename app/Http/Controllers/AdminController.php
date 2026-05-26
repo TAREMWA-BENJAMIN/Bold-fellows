@@ -147,7 +147,9 @@ class AdminController extends Controller
                 'company_brief' => ['type' => 'textarea', 'label' => 'Company Brief (Top Paragraph)'],
                 'our_mission' => ['type' => 'text', 'label' => 'Our Mission'],
                 'our_vision' => ['type' => 'text', 'label' => 'Our Vision'],
-                'our_values' => ['type' => 'text', 'label' => 'Our Values'],
+                'our_value_1' => ['type' => 'text', 'label' => 'Our Value 1', 'default' => 'Integrity & Transparency'],
+                'our_value_2' => ['type' => 'text', 'label' => 'Our Value 2', 'default' => 'Innovation & Continuous Learning'],
+                'our_value_3' => ['type' => 'text', 'label' => 'Our Value 3', 'default' => 'Efficiency, Effectiveness & Customer Centricity'],
                 'about_company_desc_1' => ['type' => 'textarea', 'label' => 'About the Company Paragraph 1'],
                 'about_company_desc_2' => ['type' => 'textarea', 'label' => 'About the Company Paragraph 2'],
                 'about_company_desc_3' => ['type' => 'textarea', 'label' => 'About the Company Paragraph 3'],
@@ -225,6 +227,7 @@ class AdminController extends Controller
                 'map_url' => ['type' => 'textarea', 'label' => 'Google Maps Embed URL', 'default' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7251!2d32.5913!3d0.3356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb0b72b8bca9%3A0x1234567890abcdef!2s135%20Kira%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1715420000000'],
             ],
             'Header Settings' => [
+                'logo' => ['type' => 'image', 'label' => 'Website Logo', 'default' => 'images/logo.png'],
                 'header_address' => ['type' => 'text', 'label' => 'Header Address', 'default' => 'Headquarter: Kampala, Uganda'],
                 'header_email' => ['type' => 'text', 'label' => 'Header Email', 'default' => 'boldfellows4@gmail.com'],
                 'social_twitter' => ['type' => 'text', 'label' => 'Twitter URL', 'default' => 'https://twitter.com/cybersecafrica'],

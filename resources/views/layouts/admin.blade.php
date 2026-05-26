@@ -20,9 +20,16 @@
     <!-- Sidebar -->
     <aside id="sidebar" class="w-64 sidebar text-white flex flex-col h-full fixed md:relative z-30 transition-transform duration-300 transform -translate-x-full md:translate-x-0">
         <div class="h-20 flex items-center justify-between px-6 border-b border-gray-700">
-            <!-- Placeholder for Logo -->
-            <div class="bg-white rounded-full h-12 w-12 flex items-center justify-center overflow-hidden">
-                <span class="text-xs text-black font-bold text-center">LOGO</span>
+            <!-- Dynamic Logo -->
+            @php
+                $adminLogoContent = \App\Models\FrontendContent::where('section', 'Header Settings')->where('key', 'logo')->first();
+            @endphp
+            <div class="bg-white rounded-full h-12 w-12 flex items-center justify-center overflow-hidden p-1">
+                @if(isset($adminLogoContent->value) && !empty(trim($adminLogoContent->value)))
+                    <img src="{{ asset($adminLogoContent->value) }}" alt="Logo" class="max-h-full max-w-full object-contain" />
+                @else
+                    <span class="text-xs text-black font-bold text-center">LOGO</span>
+                @endif
             </div>
             <button onclick="toggleSidebar()" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
                 <i class="fas fa-times text-xl"></i>
