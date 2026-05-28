@@ -151,7 +151,6 @@
 					</div>
 
 				</div>
-				@include('layouts.portfolio_carousel')
 			</div>
 
 			@include('layouts.footer')

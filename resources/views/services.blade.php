@@ -67,11 +67,13 @@
 								$num = $index + 1;
 								$titleKey = "service_{$num}_title";
 								$descKey = "service_{$num}_desc";
-								$imgKey = "service_{$num}_img";
+
+								// Fetch individual service subpage settings (section corresponds to $srv['title'])
+								$srvContent = \App\Models\FrontendContent::where('section', $srv['title'])->get()->keyBy('key');
 
 								$title = (isset($content[$titleKey]->value) && !empty(trim($content[$titleKey]->value))) ? $content[$titleKey]->value : $srv['title'];
 								$desc = (isset($content[$descKey]->value) && !empty(trim($content[$descKey]->value))) ? $content[$descKey]->value : $srv['desc_fallback'];
-								$img = (isset($content[$imgKey]->value) && !empty(trim($content[$imgKey]->value))) ? asset($content[$imgKey]->value) : asset($srv['img_fallback']);
+								$img = (isset($srvContent['banner_img']->value) && !empty(trim($srvContent['banner_img']->value))) ? asset($srvContent['banner_img']->value) : asset($srv['img_fallback']);
 							@endphp
 							<div class="one-third">
 								<div class="service-item">
