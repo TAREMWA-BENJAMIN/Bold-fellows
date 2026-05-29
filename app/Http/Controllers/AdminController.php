@@ -138,6 +138,9 @@ class AdminController extends Controller
                 'feature_3_title' => ['type' => 'text', 'label' => 'Feature 3 Title'],
                 'feature_3_desc' => ['type' => 'textarea', 'label' => 'Feature 3 Description'],
                 'feature_3_link' => ['type' => 'text', 'label' => 'Feature 3 Link URL', 'default' => 'e-learning-system'],
+                'feature_4_title' => ['type' => 'text', 'label' => 'Feature 4 Title'],
+                'feature_4_desc' => ['type' => 'textarea', 'label' => 'Feature 4 Description'],
+                'feature_4_link' => ['type' => 'text', 'label' => 'Feature 4 Link URL', 'default' => 'services'],
                 // ── Image fields ───────────────────────────────────────────
                 'slider_1_bg' => ['type' => 'image', 'label' => 'Slider 1 – Background Image', 'default' => 'images/slider/layer/1/slide1-bg.jpg'],
                 'slider_1_fg' => ['type' => 'image', 'label' => 'Slider 1 – Foreground Image', 'default' => 'images/slider/layer/1/6thEthiopia.png'],

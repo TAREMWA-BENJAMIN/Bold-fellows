@@ -278,7 +278,6 @@ Fraud Investigation, Fraud analysis" />
 					background-position: center;
 					background-repeat: no-repeat;
 					border: 1px solid #e2e8f0;
-					border-left: 4px solid #333942;
 					border-radius: 14px;
 					padding: 28px 24px 24px;
 					transition: all 0.4s cubic-bezier(.25,.8,.25,1);
@@ -316,7 +315,6 @@ Fraud Investigation, Fraud analysis" />
 					transform: translateY(-8px);
 					box-shadow: 0 20px 40px rgba(22, 159, 230, 0.12), 0 8px 16px rgba(0, 0, 0, 0.05);
 					border-color: rgba(22, 159, 230, 0.2);
-					border-left-color: #333942;
 				}
 				.bf-card-icon {
 					width: 44px;
