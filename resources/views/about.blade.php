@@ -47,21 +47,7 @@
 					</div>
 				</div><!--breadcrumbs ends -->
 				<div class="container">
-					<div class="one">
-						<section class="flex-container">
-							<div class="flexslider single-portfolio-item-slider bottom-margin">
-								<ul class="slides round">
-									<li><img src="{{ asset($content['about_slider_1_img']->value ?? 'images/slider/cyber-security.jpg') }}"
-											alt=" " /></li>
-									<li><img src="{{ asset($content['about_slider_2_img']->value ?? 'images/slider/about-csa.jpg') }}"
-											alt=" " /></li>
-									<li><img src="{{ asset($content['about_slider_3_img']->value ?? 'images/slider/about-csa-1.jpg') }}"
-											alt=" " /></li>
-								</ul>
-							</div>
 
-						</section>
-					</div>
 
 					<div class="one-third">
 
