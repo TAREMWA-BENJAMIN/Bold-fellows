@@ -2,8 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminAuthController;
 
-Route::prefix('admin')->group(function () {
+// Guest Auth Routes
+Route::middleware('guest')->group(function () {
+    Route::get('/admin/login', [AdminAuthController::class, 'showLoginForm'])->name('login');
+    Route::post('/admin/login', [AdminAuthController::class, 'login']);
+});
+
+// Protected Admin Dashboard Routes
+Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/', function () {
         return redirect()->route('admin.manage-pages');
     });
@@ -15,6 +23,9 @@ Route::prefix('admin')->group(function () {
     Route::get('/inquiries', [AdminController::class, 'inquiries'])->name('admin.inquiries');
     Route::get('/inquiries/{id}', [AdminController::class, 'viewInquiry'])->name('admin.view-inquiry');
     Route::delete('/inquiries/{id}', [AdminController::class, 'deleteInquiry'])->name('admin.delete-inquiry');
+
+    // Logout
+    Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
 });
 
 Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');

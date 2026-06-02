@@ -62,6 +62,16 @@
                         <span class="ml-3">Cache</span>
                     </a>
                 </li>
+                <li class="mt-6 border-t border-gray-700/50 pt-4">
+                    <form id="logoutForm" action="{{ route('logout') }}" method="POST" class="hidden">
+                        @csrf
+                    </form>
+                    <a href="#" onclick="event.preventDefault(); document.getElementById('logoutForm').submit();"
+                       class="flex items-center px-6 py-3 text-red-400 hover:bg-red-500/10 hover:text-red-300 rounded-lg mx-3 transition-colors duration-150">
+                        <i class="fas fa-sign-out-alt w-6 text-center"></i>
+                        <span class="ml-3 font-semibold">Logout</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </aside>
