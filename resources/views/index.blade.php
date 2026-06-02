@@ -5,8 +5,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Bold Fellows- Internet Security, Information Security, Consulting, Training, Certified Ethical Hacking,
-		Computer Forensic, Banking</title>
+	<title>Bold Fellows</title>
 	<meta name="Keywords" content="Bold Fellows, Source code Security tool, Vulnerability Assessment, Vulnerability scan, Vulnerability tools,
 Security Consultant, IT Security Consultants, IT Security Training, Security Training, Cyber Security training, Cyber Crime, Cyber Security Analysis,
 Fraud Investigation, Fraud analysis" />
@@ -267,7 +266,7 @@ Fraud Investigation, Fraud analysis" />
 					max-width: 1080px;
 					margin: 0 auto;
 					padding: 0 24px;
-					flex-wrap: nowrap;
+					flex-wrap: wrap;
 					justify-content: center;
 				}
 				.bf-solution-card {
