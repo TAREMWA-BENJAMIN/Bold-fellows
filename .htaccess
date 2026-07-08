@@ -1,11 +1,34 @@
 <IfModule mod_rewrite.c>
+    # Security: Hide Headers
+    <IfModule mod_headers.c>
+        Header unset X-Powered-By
+        Header unset X-CF-Powered-By
+        Header unset X-Runtime
+        Header set X-Content-Type-Options "nosniff"
+        Header set X-XSS-Protection "1; mode=block"
+        Header set X-Frame-Options "SAMEORIGIN"
+        Header set Server "SolverShop Webserver"
+    </IfModule>
+
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /bold-fellows/
 
-    RewriteCond %{REQUEST_URI} !^/bold-fellows/public/
-    RewriteRule ^(.*)$ public/$1 [L]
+    # Pass Authorization header to PHP (required for Passport / Bearer tokens on Apache)
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    RewriteCond %{REQUEST_FILENAME} -d [OR]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ ^$1 [N]
+
+    RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+    RewriteRule ^(.*)$ public/$1 
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php
+
 </IfModule>

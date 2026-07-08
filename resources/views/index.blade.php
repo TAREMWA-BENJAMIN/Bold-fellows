@@ -570,7 +570,7 @@ Fraud Investigation, Fraud analysis" />
 				}
 			</style>
 
-			<section class="bf-trust-bar">
+			{{-- <section class="bf-trust-bar">
 				<div class="bf-trust-grid">
 					<div class="bf-trust-card">
 						<div class="bf-trust-icon-container">
@@ -608,7 +608,7 @@ Fraud Investigation, Fraud analysis" />
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> --}}
 
 			<!-- ═══════════════════════════════════════════════════════════
 			     OUR SOLUTIONS SECTION

@@ -42,7 +42,7 @@
         .glow-1 {
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(90, 75, 250, 0.4) 0%, rgba(0, 0, 0, 0) 70%);
+            background: radial-gradient(circle, rgba(97, 84, 248, 0.4) 0%, rgba(0, 0, 0, 0) 70%);
             top: -100px;
             left: -100px;
             animation: float-slow 12s infinite alternate ease-in-out;

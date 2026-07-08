@@ -173,34 +173,15 @@ $(document).ready(function ($) {
 /*----------------------------------------------------------*/
 /*              9 - RESPONSIVE NAVIGATION                   */
 /*----------------------------------------------------------*/
-        var $menu_select = $("<select />");
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Main Navigation"
-        }).appendTo($menu_select);
-        $menu_select.appendTo("#main-navigation");
-        $("#main-navigation ul li a").each(function () {
-            var menu_url = $(this).attr("href");
-            var menu_text = $(this).text();
-            if ($(this).parents("li").length == 2) {
-                menu_text = '- ' + menu_text;
+        $('.mobile-nav-toggle').click(function (e) {
+            e.preventDefault();
+            $('#main-navigation').toggleClass('nav-open');
+        });
+        $('.main-menu li:has(ul) > a').click(function (e) {
+            if ($(window).width() <= 767) {
+                e.preventDefault();
+                $(this).parent('li').toggleClass('open').children('ul').slideToggle(200);
             }
-            if ($(this).parents("li").length == 3) {
-                menu_text = "-- " + menu_text;
-            }
-            if ($(this).parents("li").length > 3) {
-                menu_text = "--- " + menu_text;
-            }
-            $("<option />", {
-                "value": menu_url,
-                "text": menu_text
-            }).appendTo($menu_select)
-        })
-        field_id = "#main-navigation select";
-        $(field_id).change(function () {
-            value = $(this).attr('value');
-            window.location = value;
         });
 /*----------------------------------------------------------*/
 /*              10 - MAIN NAVIGATION JS                     */

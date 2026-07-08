@@ -308,13 +308,51 @@ header#header{
     border-bottom: 1px solid rgba(0,0,0,0.1cccc);
 }
 #main-navigation.sticky-fullwidth { width: 100%!important }
-#main-navigation {
+#main-navigation,
+#main-navigation.sticky,
+#main-navigation.sticky-fullwidth {
     float: left;
     width: 100%;
     height: auto;
     margin-top: 0px;
+    position: relative;
+    background: transparent !important;
+    border-bottom: none !important;
 }
-#main-navigation select { display: none }
+.mobile-nav-toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: #111;
+    border-radius: 4px;
+    cursor: pointer;
+    text-indent: -9999px;
+    overflow: hidden;
+    z-index: 1002;
+}
+.mobile-nav-toggle span,
+.mobile-nav-toggle span::before,
+.mobile-nav-toggle span::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mobile-nav-toggle span {
+    top: 50%;
+}
+.mobile-nav-toggle span::before { top: 8px; }
+.mobile-nav-toggle span::after { top: -8px; }
+#main-navigation select { display: none !important; }
 #main-navigation select {
     background: #FFF;
     border: 1px solid #eee;

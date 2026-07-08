@@ -2,13 +2,64 @@
 .main-menu li:last-child a { border-right: 1px solid #0084c9}
 .main-menu li li a {border-left: none}
 .main-menu li li:last-child a { border-right: none}
-#main-navigation {background: #169fe6}
-#header-links { border-top: 4px solid #169fe6}
+#main-navigation {background: transparent !important; border-bottom: none !important;}
+#header-links { border-top: 4px solid var(--site-line-color); }
 .button.color, .button.grey:hover { background: #169fe6; border-bottom: 1px solid #0084c9;}
 .ls-fullwidth .ls-nav-prev:hover {background: #169fe6 url("../../images/slider-prev.png") 50% 50% no-repeat}
 .ls-fullwidth .ls-nav-next:hover {background: #169fe6 url("../../images/slider-next.png") 50% 50% no-repeat}
 .flex-direction-nav li .flex-next:hover { background-color: #169fe6}
 .flex-direction-nav li .flex-prev:hover { background-color: #169fe6} 
+
+/* site-wide orange line color overrides */
+:root { --site-line-color: #ff7302; }
+.horizontal-line,
+#header-links,
+.intro-features,
+#breadcrumb,
+#breadcrumbs ul li,
+#footer.s2,
+#footer.s3,
+#footer.s2 ul li,
+#footer.s3 ul li,
+#footer.s2 .flickr-widget li,
+#footer.s3 .flickr-widget li,
+#footer ul li,
+ul.contact-info-widget li,
+ul.simple-list li,
+ul.accordion li:last-child,
+ul.pricing-boxes li .plan-features,
+ul.pricing-boxes.standalone li .plan-features,
+.plan-features ul li,
+#main-navigation.sticky,
+.feature-block i:hover,
+ul.team-member-links li a:hover,
+ul.accordion li.accordion-item.selected .accordion-switch .togglegfx {
+    border-color: var(--site-line-color) !important;
+}
+.horizontal-line { border-top-color: var(--site-line-color) !important; }
+ul.simple-list li { border-bottom: 1px solid var(--site-line-color) !important; }
+ul.accordion li:last-child { border-bottom: 1px solid var(--site-line-color) !important; }
+#footer.s3 ul li,
+#footer.s2 ul li,
+#footer ul li,
+#footer.s2 .flickr-widget li,
+#footer.s3 .flickr-widget li,
+.flickr-widget.inner li,
+ul.contact-info-widget li { border-color: var(--site-line-color) !important; }
+#copyrights,
+#copyrights.s2,
+#copyrights.s3 { border-top-color: var(--site-line-color) !important; }
+#footer a:hover,
+#copyrights a:hover,
+#footer.s2 a:hover,
+#copyrights.s2 a:hover,
+#footer.s3 a:hover,
+#copyrights.s3 a:hover { color: var(--site-line-color) !important; text-decoration: none; }
+#breadcrumb { border-top-color: var(--site-line-color) !important; border-bottom-color: var(--site-line-color) !important; }
+#header-links { border-top-color: var(--site-line-color) !important; border-bottom-color: var(--site-line-color) !important; }
+#footer.s2 { border-top-color: var(--site-line-color) !important; }
+#footer.s3 { border-top-color: var(--site-line-color) !important; }
+ul.accordion li.accordion-item.selected .accordion-switch .togglegfx { background: #fff !important; }
 .portfolio-item, .blog-item,.button.color-alt,.button.simple-grey:hover,.home-intro,a.product-item-preview:hover,.ui-slider .ui-slider-range,.tp-caption.large_title,.comment-author span.reply a:hover,
 .comment-author span.reply a:hover i,.pagination ul li a:hover,.pagination .current, .sidebar  ul.popular-tags li a:hover,.flex-control-nav li a:hover,.flex-control-nav li a.flex-active,li.carousel-active-tab,table.simple-table th,#filterable li a:hover,
 #filterable li a.active,.plan-name.color,.plan-price.color,.bar_graph li span,.footer-call-to-action,.feature-block-icon,.feature-block-icon  span,.ls_large_text_03 {
@@ -46,3 +97,18 @@ ul.team-member-links li a:hover { border-color: #169fe6 }
    .tp-leftarrow:hover,.tp-rightarrow:hover { background-color:#169fe6   }
 .bullet.selected  { background-color:#169fe6!important   }
 .flex-small-caption{background:#169fe6 }
+
+/* global override: force all borders to the site orange (logo match) */
+body * {
+	border-color: var(--site-line-color) !important;
+}
+
+hr { border-color: var(--site-line-color) !important; background-color: transparent; }
+
+table.simple-table th, table.simple-table td { border-color: var(--site-line-color) !important; }
+
+/* keep a thin top strip in the logo orange, remove only breadcrumb bottom lines */
+#header-links { border-top: 4px solid var(--site-line-color) !important; border-bottom: none !important; }
+header#header, header#header.header-3 { border-bottom: none !important; }
+#breadcrumb { border-top: none !important; border-bottom: none !important; }
+
