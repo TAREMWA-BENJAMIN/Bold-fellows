@@ -28,9 +28,9 @@
 						<li><a href="point-of-sale-system" title="Point of Sale System">Point of Sale System</a></li>
 						<li><a href="payment-processing-system" title="Payment Processing System">Payment Processing System</a></li>
 						<li><a href="hospital-clinic-management-system" title="Hospital/Clinic Management System">Hospital/Clinic Management System</a></li>
+						<li><a href="products" title="All Products">All Products</a></li>
 					</ul>
 				</li>
-				<li><a href="products" title="All Products">All Products</a></li>
 				<li><a href="contact" title="Contact Us" {!! (isset($active) && $active == 'contact') ? 'id="current"' : '' !!}>Contact</a></li>
 			</ul>
 			<!-- main navigation ends-->

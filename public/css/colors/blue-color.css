@@ -112,3 +112,13 @@ table.simple-table th, table.simple-table td { border-color: var(--site-line-col
 header#header, header#header.header-3 { border-bottom: none !important; }
 #breadcrumb { border-top: none !important; border-bottom: none !important; }
 
+/* restore original light dividers for main navigation menus (undo global override) */
+#main-navigation .main-menu > li > a,
+#main-navigation .main-menu li ul li a,
+.main-menu li ul li a,
+.main-menu li a {
+	border-color: rgba(0,0,0,0.08) !important;
+}
+#main-navigation .main-menu > li > a { border-bottom: 1px solid rgba(0,0,0,0.08) !important; }
+.main-menu li ul li a { border-bottom: 1px solid #e6e9ee !important; }
+
