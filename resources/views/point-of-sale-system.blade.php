@@ -4,7 +4,7 @@
 	<title>Point of Sale System | Bold Fellows</title>
 	<meta name="description" content="Bold Fellows Point of Sale System — fast, reliable POS for retail, restaurants, and service businesses.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="images/favicon.gif" />
+	<link rel="shortcut icon" href="images/logo.png" />
 	@include('layouts.assets')
 </head>
 <body>
