@@ -33,9 +33,8 @@
 
 			<p>Headquarter: {{ $footerContent['contact_address']->value ?? 'Africa Headquarter: Nairobi, Kenya.' }}</p>
 			<p>Tel: {{ $footerContent['contact_tel']->value ?? '+ 254 518 007 755' }}</p>
-			<p>MTN: {{ $footerContent['contact_safaricom']->value ?? '+ 254 722 102 854' }}</p>
-			<p>Airtel: {{ $footerContent['contact_airtel']->value ?? '+ 254 786 629 775' }}</p>
-			<p>Fax: {{ $footerContent['contact_fax']->value ?? '+ 254 202 149 857' }}</p>
+			<p>Tel: {{ $footerContent['contact_safaricom']->value ?? '+ 254 722 102 854' }}</p>
+			<p>Tel: {{ $footerContent['contact_airtel']->value ?? '+ 254 786 629 775' }}</p>
 			<p> Email: <a
 					href="mailto:{{ $footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}">{{
 					$footerContent['contact_email']->value ?? 'info@cybersecurityafrica.com' }}</a></p>
