@@ -4,7 +4,7 @@
 	<title>Web Hosting | Bold Fellows</title>
 	<meta name="description" content="Bold Fellows Web Hosting — reliable, fast, and secure hosting solutions for businesses, startups, and enterprises with 99.9% uptime guarantee.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="images/logo.png" />
+	<link rel="shortcut icon" href="{{ isset($headerContent['logo']->value) && !empty(trim($headerContent['logo']->value)) ? asset($headerContent['logo']->value) : asset('images/logo.png') }}" />
 	@include('layouts.assets')
 </head>
 <body>

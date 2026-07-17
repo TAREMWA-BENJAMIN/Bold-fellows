@@ -4,7 +4,7 @@
 	<title>Hospital/Clinic Management System | Bold Fellows</title>
 	<meta name="description" content="Bold Fellows Hospital/Clinic Management System — an all-in-one platform to manage patient records, appointments, billing, pharmacy, and lab results for healthcare facilities.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="images/logo.png" />
+	<link rel="shortcut icon" href="{{ isset($headerContent['logo']->value) && !empty(trim($headerContent['logo']->value)) ? asset($headerContent['logo']->value) : asset('images/logo.png') }}" />
 	@include('layouts.assets')
 </head>
 <body>

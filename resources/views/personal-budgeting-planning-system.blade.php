@@ -5,7 +5,7 @@
 	<meta name="description"
 		content="Master Your Financial Future. A web dashboard and companion app for individuals and teams who want a calmer view of their money, with budgets, plans, goals, and day-to-day financial activity and behavior in one place.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="images/logo.png" />
+	<link rel="shortcut icon" href="{{ isset($headerContent['logo']->value) && !empty(trim($headerContent['logo']->value)) ? asset($headerContent['logo']->value) : asset('images/logo.png') }}" />
 	@include('layouts.assets')
 </head>
 

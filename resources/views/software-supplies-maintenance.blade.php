@@ -4,7 +4,7 @@
 	<title>Software Supplies &amp; Maintenance | Bold Fellows</title>
 	<meta name="description" content="Bold Fellows Software Supplies & Maintenance — licensed software procurement, installation, upgrades, and ongoing support for businesses of all sizes.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="images/logo.png" />
+	<link rel="shortcut icon" href="{{ isset($headerContent['logo']->value) && !empty(trim($headerContent['logo']->value)) ? asset($headerContent['logo']->value) : asset('images/logo.png') }}" />
 	@include('layouts.assets')
 </head>
 <body>

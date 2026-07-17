@@ -13,7 +13,7 @@ Fraud Investigation, Fraud analysis" />
 		content="We are a full-service Information Security Consulting firm offering a comprehensive range of Services and Products to help organizations protect their valuable assets. " />
 	<meta name="robots" content="index, follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="images/logo.png" /><!-- MAIN STYLE CSS FILE -->
+	<link rel="shortcut icon" href="{{ isset($headerContent['logo']->value) && !empty(trim($headerContent['logo']->value)) ? asset($headerContent['logo']->value) : asset('images/logo.png') }}" /><!-- MAIN STYLE CSS FILE -->
 	@include('layouts.assets')
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<style type="text/css">

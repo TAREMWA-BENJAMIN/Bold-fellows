@@ -5,7 +5,7 @@
 	<meta name="description"
 		content="Bold Fellows Lending & Saving System — a powerful platform for SACCOs, microfinance institutions, and cooperatives to manage loans, savings, and member accounts seamlessly.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="images/logo.png" />
+	<link rel="shortcut icon" href="{{ isset($headerContent['logo']->value) && !empty(trim($headerContent['logo']->value)) ? asset($headerContent['logo']->value) : asset('images/logo.png') }}" />
 	@include('layouts.assets')
 </head>
 
